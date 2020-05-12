@@ -7,6 +7,7 @@ import { ProjectsPage } from './ProjectsPage'
 import { ServicesPage } from './ServicesPage'
 
 
+
 export class LandingPage extends Component {
     constructor(props) {
         super(props)
@@ -18,6 +19,9 @@ export class LandingPage extends Component {
         return (
             <div>
                 <Carousel showThumbs={false}>
+                    <div>
+                        <img src="../img/scs_headerShip.jpg"></img>
+                    </div>
                     <div>
                         <ServicesPage />
                     </div>

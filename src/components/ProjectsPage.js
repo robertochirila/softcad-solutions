@@ -4,7 +4,7 @@ export class ProjectsPage extends Component {
     render() {
         return (
             <div>
-                <h1>Projects Page</h1>
+                <img src='../img/scs_headerShip2.jpg'></img>
             </div>
         )
     }
