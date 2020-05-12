@@ -3,9 +3,9 @@ import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import '../styles/LandingPage.css'
 import { Spring } from 'react-spring/renderprops'
-import { LocationPage } from './LocationPage'
-import { PartnersPage } from './PartnersPage'
-import { ProjectsPage } from './ProjectsPage'
+import { LocationPartnersPage } from './LocationPartnersPage'
+import { NavalProjectsPage } from './NavalProjectsPage'
+import { SoftwareProjectsPage } from './SoftwareProjectsPage'
 import { ServicesPage } from './ServicesPage'
 
 
@@ -41,13 +41,13 @@ export class LandingPage extends Component {
                         <ServicesPage />
                     </div>
                     <div>
-                        <ProjectsPage />
+                        <NavalProjectsPage />
                     </div>
                     <div>
-                        <PartnersPage />
+                        <SoftwareProjectsPage />
                     </div>
                     <div>
-                        <LocationPage />
+                        <LocationPartnersPage />
                     </div>
                 </Carousel>
 
