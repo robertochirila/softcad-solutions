@@ -1,6 +1,14 @@
 import React, { Component } from 'react'
 
 export class NavalProjectsPage extends Component {
+    moveNext = (e) => {
+        e.preventDefault()
+        this.props.incrementStep()
+    }
+    movePrev = (e) => {
+        e.preventDefault()
+        this.props.decrementStep()
+    }
     render() {
         return (
             <div className="section-naval">
@@ -16,6 +24,8 @@ export class NavalProjectsPage extends Component {
                             <img className="image-naval-collection" src="../img/scs_naval2.png"></img>
 
                         </div>
+                        <button onClick={this.movePrev}>Back</button>
+
                     </div>
                     <div className="services-box-right">
                         <div>
@@ -27,6 +37,8 @@ export class NavalProjectsPage extends Component {
                             <img className="image-naval-collection" src="../img/scs_naval4.png"></img>
 
                         </div>
+                        <button onClick={this.moveNext}>Next</button>
+
                     </div>
                 </div>
             </div>

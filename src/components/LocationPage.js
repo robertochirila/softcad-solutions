@@ -1,6 +1,11 @@
 import React, { Component } from 'react'
 
 export class LocationPage extends Component {
+
+    movePrev = (e) => {
+        e.preventDefault()
+        this.props.decrementStep()
+    }
     render() {
         return (
             <div>
@@ -17,6 +22,7 @@ export class LocationPage extends Component {
                     <div className="column-2">
                         <img src="../img/scs_location.jpg" className="image-location"></img>
                     </div>
+                    <button onClick={this.movePrev}>Back</button>
                 </div>
 
             </div>

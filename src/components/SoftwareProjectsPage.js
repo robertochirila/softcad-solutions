@@ -1,6 +1,14 @@
 import React, { Component } from 'react'
 
 export class SoftwareProjectsPage extends Component {
+    moveNext = (e) => {
+        e.preventDefault()
+        this.props.incrementStep()
+    }
+    movePrev = (e) => {
+        e.preventDefault()
+        this.props.decrementStep()
+    }
     render() {
         return (
             <div className="section-software">
@@ -18,6 +26,8 @@ export class SoftwareProjectsPage extends Component {
                         <div>
                             <img></img>
                         </div>
+                        <button onClick={this.movePrev}>Back</button>
+
                     </div>
                     <div className="services-box-right">
                         <div>
@@ -32,6 +42,8 @@ export class SoftwareProjectsPage extends Component {
                         <div>
                             <img></img>
                         </div>
+                        <button onClick={this.moveNext}>Next</button>
+
                     </div>
                 </div>
             </div>
