@@ -1,0 +1,54 @@
+.services-box {
+    position: absolute;
+    top: 10%;
+    left: 5%;
+}
+
+.services-box-left {
+    float: left;
+    width: 49%;
+}
+
+.services-box-right {
+    float: left;
+    width: 49%;
+}
+
+.services-paragraph {
+    font-size: 120%;
+    width: 90%;
+    text-transform: capitalize;
+    line-height: 2rem;
+}
+
+.header-image-naval {
+    margin-top: 2rem;
+    border-radius: 5%;
+}
+
+.header-image-software {
+    margin-top: 2rem;
+    border-radius: 25%;
+    height: 400px;
+    width: 400px !important;
+}
+
+.services-button-naval {
+    text-align: left;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border: 2px solid #1c29df;
+    background: transparent;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
+
+.services-button-software {
+    text-align: left;
+    text-transform: uppercase;
+    padding: 15px 20px;
+    border: 2px solid #1c29df;
+    background: transparent;
+    color: #ffffff;
+    font-size: 0.8rem;
+}
