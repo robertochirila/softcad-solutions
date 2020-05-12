@@ -33,21 +33,21 @@
     margin-top: 2rem;
 }
 
-.header-image-naval-collection {
+.image-naval-collection {
     margin-top: 5%;
     margin-left: 2%;
     width: 400px !important;
     height: 350px;
 }
 
-.header-image-software-collection {
+.image-software-collection {
     margin-top: 5%;
     margin-left: 2%;
     width: 400px !important;
     height: 300px;
 }
 
-.header-image-software {
+.image-software {
     margin-top: 2rem;
     border-radius: 25%;
     height: 400px;

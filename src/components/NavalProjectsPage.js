@@ -12,8 +12,8 @@ export class NavalProjectsPage extends Component {
                             <p className="services-paragraph">ESD model screenshot and picture from shipyards during ship building stages</p>
                         </div>
                         <div>
-                            <img className="header-image-naval-collection" src="../img/scs_naval1.png"></img>
-                            <img className="header-image-naval-collection" src="../img/scs_naval2.png"></img>
+                            <img className="image-naval-collection" src="../img/scs_naval1.png"></img>
+                            <img className="image-naval-collection" src="../img/scs_naval2.png"></img>
 
                         </div>
                     </div>
@@ -23,8 +23,8 @@ export class NavalProjectsPage extends Component {
                             <p className="services-paragraph">We can create ship 3D model but also any kind of steel structure</p>
                         </div>
                         <div>
-                            <img className="header-image-naval-collection" src="../img/scs_naval3.png"></img>
-                            <img className="header-image-naval-collection" src="../img/scs_naval4.png"></img>
+                            <img className="image-naval-collection" src="../img/scs_naval3.png"></img>
+                            <img className="image-naval-collection" src="../img/scs_naval4.png"></img>
 
                         </div>
                     </div>

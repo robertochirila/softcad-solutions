@@ -36,7 +36,7 @@ export class ServicesPage extends Component {
                             <button onClick={this.onClickHandler} className="services-button-software" name="software">Software Projects</button>
                         </div>
                         <div>
-                            <img className="header-image-software" src="../img/programmingIcon2.png"></img>
+                            <img className="image-software" src="../img/programmingIcon2.png"></img>
                         </div>
                     </div>
                 </div>
