@@ -1,6 +1,6 @@
 .services-box {
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 5%;
 }
 
@@ -21,9 +21,30 @@
     line-height: 2rem;
 }
 
+.services-paragraph-software {
+    font-size: 120%;
+    width: 90%;
+    text-transform: capitalize;
+    line-height: 2rem;
+    text-align: left;
+}
+
 .header-image-naval {
     margin-top: 2rem;
-    border-radius: 5%;
+}
+
+.header-image-naval-collection {
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 400px !important;
+    height: 350px;
+}
+
+.header-image-software-collection {
+    margin-top: 5%;
+    margin-left: 2%;
+    width: 400px !important;
+    height: 300px;
 }
 
 .header-image-software {
@@ -51,4 +72,15 @@
     background: transparent;
     color: #ffffff;
     font-size: 0.8rem;
+}
+
+.header-software {
+    text-align: left;
+    letter-spacing: 3px;
+    word-spacing: 5px;
+}
+
+.header-naval {
+    letter-spacing: 3px;
+    word-spacing: 5px;
 }

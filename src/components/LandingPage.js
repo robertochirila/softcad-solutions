@@ -21,7 +21,6 @@ export class LandingPage extends Component {
     onClickHandler = () => {
         let getNextArrow = document.getElementsByClassName('control-arrow control-next')[0]
         getNextArrow.click()
-        console.log(getNextArrow)
     }
     render() {
         return (
@@ -29,7 +28,7 @@ export class LandingPage extends Component {
                 <Carousel showArrows={true}>
                     <React.Fragment>
                         <header>
-                            <img className="header-image" src="../img/scs_headerShip.jpg" ></img>
+                            <img className="header-image-hero" src="../img/scs_headerShip.jpg" ></img>
                             <div className="header-text-box">
                                 <h1 className="header-text">Softcad Solutions <br /> Designing ships and <br /> custom software since 2002.</h1>
                                 <button onClick={this.onClickHandler} className="header-button">Show me More</button>
