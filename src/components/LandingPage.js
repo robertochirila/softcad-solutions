@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import '../styles/LandingPage.css'
-import { Spring } from 'react-spring/renderprops'
+
+//import '../styles/LandingPage.css'
 import { PartnersPage } from './PartnersPage'
 import { NavalProjectsPage } from './NavalProjectsPage'
 import { SoftwareProjectsPage } from './SoftwareProjectsPage'
 import { ServicesPage } from './ServicesPage'
 import LocationPage from './LocationPage';
+import { Fade } from 'reactstrap';
 
 
 
@@ -19,43 +18,69 @@ export class LandingPage extends Component {
         }
     }
 
-    onClickHandler = () => {
-        let getNextArrow = document.getElementsByClassName('control-arrow control-next')[0]
-        getNextArrow.click()
+    incrementStep = () => {
+        const { step } = this.state
+        this.setState({ step: step + 1 })
     }
+
+    decrementStep = () => {
+        const { step } = this.state
+        this.setState({ step: step - 1 })
+    }
+
+
     render() {
-        return (
-            <div>
-                <Carousel showArrows={true}>
+        const { step } = this.state
+        //console.log(step)
+        switch (step) {
+            case 1:
+                return (
                     <React.Fragment>
                         <header>
-                            <img className="header-image-hero" src="../img/scs_headerShip.jpg" ></img>
+                            {<Fade timeout={500}>
+                                <div className="overlay">
+                                    <img className="header-image-hero" src="../img/scs_headerShip.jpg" ></img>
+                                </div>
+                            </Fade>}
                             <div className="header-text-box">
-                                <h1 className="header-text">Softcad Solutions <br /> Designing ships and <br /> custom software since 2002.</h1>
-                                <button onClick={this.onClickHandler} className="header-button">Show me More</button>
+
+                                <Fade timeout={750}>
+                                    <h1 className="header-text">Softcad Solutions <br /> Designing ships and <br /> custom software since 2002.</h1>
+                                </Fade>
+                                <Fade timeout={1000}>
+                                    <button onClick={this.incrementStep} className="header-button">Show me More</button>
+                                </Fade>
                             </div>
                         </header>
 
                     </React.Fragment>
-                    <div>
-                        <ServicesPage />
-                    </div>
-                    <div>
-                        <NavalProjectsPage />
-                    </div>
-                    <div>
-                        <SoftwareProjectsPage />
-                    </div>
-                    <div>
-                        <PartnersPage />
-                    </div>
-                    <div>
-                        <LocationPage />
-                    </div>
-                </Carousel>
-
-            </div>
-        )
+                )
+                break;
+            case 2:
+                return (
+                    <ServicesPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                )
+                break;
+            case 3:
+                return (
+                    <NavalProjectsPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                )
+                break
+            case 4:
+                return (
+                    <SoftwareProjectsPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                )
+                break;
+            case 5:
+                return (
+                    <PartnersPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                )
+                break
+            case 6:
+                return (
+                    <LocationPage decrementStep={this.decrementStep} />
+                )
+        }
     }
 }
 

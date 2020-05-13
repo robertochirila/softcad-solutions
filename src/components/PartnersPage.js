@@ -1,6 +1,18 @@
 import React, { Component } from 'react'
+import { Fade } from 'reactstrap'
 
 export class PartnersPage extends Component {
+    moveNext = (e) => {
+        e.preventDefault()
+        this.props.incrementStep()
+    }
+
+
+
+    movePrev = (e) => {
+        e.preventDefault()
+        this.props.decrementStep()
+    }
     render() {
         return (
             <div className="section-partners-location">
@@ -9,47 +21,68 @@ export class PartnersPage extends Component {
                     <div className="row">
                         <h2 className="partners-text">Our Partners</h2>
                         <div className="column-3">
-                            <img src="../img/scs_partners1.png" className="logo-partners"></img>
-                            <p>Damen Shipyard (Galati Romania, Gorinchem Holland, Shipyard Yichang China, Nakilat Qatar)</p>
+                            <Fade timeout={500}>
+                                <img src="../img/scs_partners1.png" className="logo-partners"></img>
+                                <p>Damen Shipyard (Galati Romania, Gorinchem Holland, Shipyard Yichang China, Nakilat Qatar)</p>
+                            </Fade>
                         </div>
                         <div className="column-3">
-                            <img src="../img/scs_partners2.png" className="logo-partners"></img>
-                            <p>Vard Shipyard (Tulcea Romania, Braila Romania, Vung Tau , Vietnam, Aukra Norway)</p>
+                            <Fade timeout={750}>
+                                <img src="../img/scs_partners2.png" className="logo-partners"></img>
+                                <p>Vard Shipyard (Tulcea Romania, Braila Romania, Vung Tau , Vietnam, Aukra Norway)</p>
+                            </Fade>
                         </div>
                         <div className="column-3">
-                            <img src="../img/scs_partners3.png" className="logo-partners"></img>
-                            <p>Arabesque Galati, Romania</p>
-                        </div>
-                    </div>
-                    <div className="row">
-                        <div className="column-3">
-                            <img src="../img/scs_partners4.png" className="logo-partners"></img>
-                            <p>Lamprell Shipyard Sharjah, UAE</p>
-                        </div>
-                        <div className="column-3">
-                            <img src="../img/scs_partners5.png" className="logo-partners"></img>
-                            <p>NASDIS Galati, Romania</p>
-                        </div>
-                        <div className="column-3">
-                            <img src="../img/scs_partners6.png" className="logo-partners"></img>
-                            <p>Ship Design Group Galati, Romania</p>
+                            <Fade timeout={1000}>
+                                <img src="../img/scs_partners3.png" className="logo-partners"></img>
+                                <p>Arabesque Galati, Romania</p>
+                            </Fade>
                         </div>
                     </div>
                     <div className="row">
                         <div className="column-3">
-                            <img src="../img/scs_partners7.png" className="logo-partners"></img>
-                            <p>Icepronav Galati, Romania</p>
+                            <Fade timeout={1250}>
+                                <img src="../img/scs_partners4.png" className="logo-partners"></img>
+                                <p>Lamprell Shipyard Sharjah, UAE</p>
+                            </Fade>
                         </div>
                         <div className="column-3">
-                            <img src="../img/scs_partners8.png" className="logo-partners"></img>
-                            <p>ATG Shipyard Giurgiu, Romania</p>
+                            <Fade timeout={1500}>
+                                <img src="../img/scs_partners5.png" className="logo-partners"></img>
+                                <p>NASDIS Galati, Romania</p>
+                            </Fade>
                         </div>
                         <div className="column-3">
-                            <img src="../img/scs_partners9.png" className="logo-partners"></img>
-                            <p>Ginton Naval Architect, Holland</p>
+                            <Fade timeout={1750}>
+                                <img src="../img/scs_partners6.png" className="logo-partners"></img>
+                                <p>Ship Design Group Galati, Romania</p>
+                            </Fade>
+                        </div>
+                    </div>
+                    <div className="row">
+                        <div className="column-3">
+                            <Fade timeout={2000}>
+                                <img src="../img/scs_partners7.png" className="logo-partners"></img>
+                                <p>Icepronav Galati, Romania</p>
+                            </Fade>
+                        </div>
+                        <div className="column-3">
+                            <Fade timeout={2250}>
+                                <img src="../img/scs_partners8.png" className="logo-partners"></img>
+                                <p>ATG Shipyard Giurgiu, Romania</p>
+                            </Fade>
+                        </div>
+                        <div className="column-3">
+                            <Fade timeout={2500}>
+                                <img src="../img/scs_partners9.png" className="logo-partners"></img>
+                                <p>Ginton Naval Architect, Holland</p>
+                            </Fade>
                         </div>
                     </div>
                 </div>
+                <button onClick={this.movePrev} className="button-prev">Back</button>
+                <button onClick={this.moveNext} className="button-next">Next</button>
+
             </div>
         )
     }
