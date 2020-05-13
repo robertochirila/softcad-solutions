@@ -38,11 +38,9 @@ export class LandingPage extends Component {
                     <React.Fragment>
                         <header>
                             {<Fade timeout={500}>
-
-                                <img className="header-image-hero" src="../img/scs_headerShip.jpg" ></img>
-
-
-
+                                <div className="overlay">
+                                    <img className="header-image-hero" src="../img/scs_headerShip.jpg" ></img>
+                                </div>
                             </Fade>}
                             <div className="header-text-box">
 
