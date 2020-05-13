@@ -1,13 +1,12 @@
 import React, { Component } from 'react'
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
 //import '../styles/LandingPage.css'
-import { Spring } from 'react-spring/renderprops'
 import { PartnersPage } from './PartnersPage'
 import { NavalProjectsPage } from './NavalProjectsPage'
 import { SoftwareProjectsPage } from './SoftwareProjectsPage'
 import { ServicesPage } from './ServicesPage'
 import LocationPage from './LocationPage';
+import { Fade } from 'reactstrap';
 
 
 
@@ -38,10 +37,21 @@ export class LandingPage extends Component {
                 return (
                     <React.Fragment>
                         <header>
-                            <img className="header-image-hero" src="../img/scs_headerShip.jpg" ></img>
+                            {<Fade timeout={500}>
+
+                                <img className="header-image-hero" src="../img/scs_headerShip.jpg" ></img>
+
+
+
+                            </Fade>}
                             <div className="header-text-box">
-                                <h1 className="header-text">Softcad Solutions <br /> Designing ships and <br /> custom software since 2002.</h1>
-                                <button onClick={this.incrementStep} className="header-button">Show me More</button>
+
+                                <Fade timeout={750}>
+                                    <h1 className="header-text">Softcad Solutions <br /> Designing ships and <br /> custom software since 2002.</h1>
+                                </Fade>
+                                <Fade timeout={1000}>
+                                    <button onClick={this.incrementStep} className="header-button">Show me More</button>
+                                </Fade>
                             </div>
                         </header>
 
