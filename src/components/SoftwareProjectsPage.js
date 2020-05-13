@@ -13,12 +13,14 @@ export class SoftwareProjectsPage extends Component {
     render() {
         return (
             <div className="section-software">
-                <img className="header-image" src='../img/scs_headerShip2.jpg'></img>
+                <div className="overlay">
+                    <img className="header-image" src='../img/scs_headerShip2.jpg'></img>
+                </div>
                 <div className="services-box">
                     <div className="services-box-left">
                         <div>
                             <Fade timeout={500}>
-                                <h2 className="header-software">Ship design software applications</h2>
+                                <h2 className="header-software">Ship design software applications and more</h2>
                                 <p className="services-paragraph-software">Easy Ship Design : ship design system</p>
                                 <p className="services-paragraph-software">Autonesting : plates and profiles parts automatic nesting system , cnc files code generation</p>
                                 <p className="services-paragraph-software">ShellPlates : ship 3D surfaces modeller, seams and butts arrangement , surface expansion 2D parts</p>
@@ -31,13 +33,12 @@ export class SoftwareProjectsPage extends Component {
                         <div>
                             <img></img>
                         </div>
-                        <button onClick={this.movePrev} className="button-prev">Back</button>
 
                     </div>
                     <div className="services-box-right">
                         <div>
                             <Fade timeout={500}>
-                                <h2 className="header-software">Custom software applications , few representative from more</h2>
+                                <h2 className="header-software">Custom software applications , a few examples</h2>
                                 <p className="services-paragraph-software">SERPO : shipyard ERP system , mySQL database server</p>
                                 <p className="services-paragraph-software">SICA : house roof surface calculation</p>
                                 <p className="services-paragraph-software"> SORT : automatically loading and routing of truck fleet</p>
@@ -51,7 +52,6 @@ export class SoftwareProjectsPage extends Component {
                         <div>
                             <img></img>
                         </div>
-                        <button onClick={this.moveNext} className="button-next">Next</button>
 
                     </div>
                 </div>

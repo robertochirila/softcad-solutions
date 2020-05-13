@@ -14,7 +14,10 @@ export class NavalProjectsPage extends Component {
     render() {
         return (
             <div className="section-naval">
-                <img className="header-image" src='../img/scs_headerShip2.jpg'></img>
+                <div className="overlay">
+                    <img className="header-image" src='../img/scs_headerShip2.jpg'></img>
+                </div>
+
                 <div className="services-box">
                     <div className="services-box-left">
                         <Fade timeout={500}>
@@ -32,7 +35,6 @@ export class NavalProjectsPage extends Component {
                             </Fade>
 
                         </div>
-                        <button onClick={this.movePrev} className="button-prev">Back</button>
 
                     </div>
                     <div className="services-box-right">
@@ -50,7 +52,6 @@ export class NavalProjectsPage extends Component {
                                 <img className="image-naval-collection" src="../img/scs_naval4.png"></img>
                             </Fade>
                         </div>
-                        <button onClick={this.moveNext} className="button-next">Next</button>
 
                     </div>
                 </div>

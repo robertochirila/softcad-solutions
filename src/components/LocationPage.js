@@ -10,18 +10,21 @@ export class LocationPage extends Component {
     render() {
         return (
             <div>
-                <img className="header-image" src='../img/scs_headerShip2.jpg'></img>
+                <div className="overlay">
+                    <img className="header-image" src='../img/scs_headerShip2.jpg'></img>
+                </div>
                 <div className="services-box">
                     <Fade timeout={500}>
                         <h2 className="location-text">Location</h2>
                     </Fade>
                     <div className="column-2">
                         <Fade timeout={500}>
-                            <p className="services-paragraph">FROM 2004 OUR COMPANY HAS BEEN LOCATED IN GALATI, ROMANIA.
-                            MAIN OFFICE: SOFTWARE PARK GALATI, 23 PORTULUI STREET, GALAȚI, 800025.
-                            CONTACT EMAIL: SOFTCAD.SOLUTIONS@YAHOO.COM
+                            <p className="services-paragraph">From 2004 our company has been located in Galati, Romania.</p>
+
+
+                            <p className="services-paragraph ">Main office : Software Park Galati, 23 Strada Portului, Galati, 800025.</p>
+                            <p className="services-paragraph">CONTACT EMAIL: SOFTCAD.SOLUTIONS@YAHOO.COM </p>
                             <a href="mailto:softcad.solutions@yahoo.com?Subject=Hello" target="_top"> Send Mail</a>
-                            </p>
                         </Fade>
                     </div>
                     <div className="column-2">
@@ -29,10 +32,9 @@ export class LocationPage extends Component {
                             <img src="../img/scs_location.jpg" className="image-location"></img>
                         </Fade>
                     </div>
-                    <button onClick={this.movePrev} className="button-prev">Back</button>
                 </div>
 
-            </div>
+            </div >
         )
     }
 }

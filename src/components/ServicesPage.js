@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Container, Row, Col } from 'reactstrap';
 import { Fade } from 'reactstrap';
 
 
@@ -23,9 +24,12 @@ export class ServicesPage extends Component {
     render() {
         return (
             <div className="section-services">
-                <Fade timeout={500}>
+
+                <div className="overlay">
                     <img className="header-image" src='../img/scs_headerShip2.jpg'></img>
-                </Fade>
+
+
+                </div>
                 <div className="services-box">
                     <div className="services-box-left">
                         <Fade timeout={1000}>
@@ -37,11 +41,11 @@ export class ServicesPage extends Component {
                         <Fade timeout={1500}>
                             <div>
 
-                                <img src="../img/scs_navalProject3.PNG" className="header-image-naval"></img>
+                                <img src="../img/scs_navalProject3.PNG" className="image-naval"></img>
 
                             </div>
 
-                            <button onClick={this.movePrev} className="button-prev">Back</button>
+
                         </Fade>
                     </div>
                     <div className="services-box-right">
@@ -57,11 +61,12 @@ export class ServicesPage extends Component {
                                 <img className="image-software" src="../img/programmingIcon2.png"></img>
 
                             </div>
-                            <button onClick={this.moveNext} className="button-next">Next</button>
+
                         </Fade>
                     </div>
                 </div>
             </div>
+
         )
     }
 }

@@ -7,6 +7,7 @@ import { SoftwareProjectsPage } from './SoftwareProjectsPage'
 import { ServicesPage } from './ServicesPage'
 import LocationPage from './LocationPage';
 import { Fade } from 'reactstrap';
+import { FooterNav } from './FooterNav'
 
 
 
@@ -31,7 +32,6 @@ export class LandingPage extends Component {
 
     render() {
         const { step } = this.state
-        //console.log(step)
         switch (step) {
             case 1:
                 return (
@@ -52,33 +52,49 @@ export class LandingPage extends Component {
                                 </Fade>
                             </div>
                         </header>
+                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
 
                     </React.Fragment>
                 )
                 break;
             case 2:
                 return (
-                    <ServicesPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                    <React.Fragment>
+                        <ServicesPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                    </React.Fragment>
                 )
                 break;
             case 3:
                 return (
-                    <NavalProjectsPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                    <React.Fragment>
+                        <NavalProjectsPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                    </React.Fragment>
                 )
                 break
             case 4:
                 return (
-                    <SoftwareProjectsPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                    <React.Fragment>
+                        <SoftwareProjectsPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                    </React.Fragment>
                 )
                 break;
             case 5:
                 return (
-                    <PartnersPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                    <React.Fragment>
+                        <PartnersPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                    </React.Fragment>
                 )
                 break
             case 6:
                 return (
-                    <LocationPage decrementStep={this.decrementStep} />
+                    <React.Fragment>
+                        <LocationPage decrementStep={this.decrementStep} />
+                        <FooterNav decrementStep={this.decrementStep} step={step} />
+                    </React.Fragment>
                 )
         }
     }
