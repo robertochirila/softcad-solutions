@@ -15,7 +15,7 @@ export class NavalProjectsPage extends Component {
         return (
             <div className="section-naval">
                 <div className="overlay">
-                    <img className="header-image" src='../img/scs_headerShip2.jpg'></img>
+                    <img className="header-image-naval" src='../img/scs_headerShip2.jpg' id="imageNavalProjects"></img>
                 </div>
 
                 <div className="services-box">
@@ -37,11 +37,11 @@ export class NavalProjectsPage extends Component {
                         </div>
 
                     </div>
-                    <div className="services-box-right">
+                    <div className="services-box-right" id="servicesBoxRightMobile">
                         <Fade timeout={500}>
                             <div>
-                                <h2 className="header-naval">Ships and more...</h2>
-                                <p className="services-paragraph">We can create ship 3D model but also any kind of steel structure</p>
+                                <h2 className="header-naval" id="headerNaval">Ships and more...</h2>
+                                <p className="services-paragraph" id="servicesParagraph">We can create ship 3D model but also any kind of steel structure</p>
                             </div>
                         </Fade>
                         <div>

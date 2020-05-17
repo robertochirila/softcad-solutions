@@ -54,7 +54,7 @@ html, body {
 
 /*  SERVICES PAGE  */
 
-.header-image {
+.header-image-naval {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -140,3 +140,104 @@ html, body {
   height: 100px;
   width: 300px;
 }
+
+/* MEDIA QUERIES */
+
+/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  .header-image-hero {
+    height: 100vh;
+    width: auto;
+  }
+  .header-text-box {
+    position: absolute;
+    top: 55%;
+    left: 5%;
+  }
+  .header-text {
+    font-size: 160%;
+    width: 80%;
+    word-spacing: 5px;
+    letter-spacing: 2px;
+  }
+  .header-image {
+    height: 100vh;
+    width: auto;
+  }
+  .services-box {
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    right: 5%
+  }
+  .services-box-left {
+    width: 96%;
+    margin-left: 2%;
+  }
+  .services-box-right {
+    width: 96%;
+    margin-left: 2%;
+  }
+  .header-naval {
+    font-size: 160%;
+    padding: 2%;
+  }
+  .image-naval {
+    width: 90%;
+    height: auto;
+    padding-bottom: 10%;
+  }
+  .header-image-naval {
+    height: 115vh;
+    width: auto;
+  }
+  #headerNaval {
+    color: #000000;
+  }
+  #servicesParagraph {
+    color: #000000;
+  }
+  #imageNavalProjects {
+    height: 82vh;
+  }
+  .services-paragraph {
+    font-size: 120%;
+    text-align: left;
+  }
+  .image-naval-collection {
+    height: auto;
+    width: 90%;
+    padding: 6%;
+    margin-bottom: 3%;
+  }
+  #servicesBoxRightMobile {
+    width: 100%;
+  }
+  .header-software {
+    font-size: 160%;
+  }
+  #headerSoftware {
+    color: #000000
+  }
+  .services-paragraph-software {
+    font-size: 120%;
+    text-align: left;
+  }
+  .black {
+    color: #000000 !important;
+  }
+  .image-software-collection {
+    height: auto;
+    width: 90%;
+    margin-top: 16%;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}

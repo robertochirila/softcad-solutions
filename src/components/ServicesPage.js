@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Container, Row, Col } from 'reactstrap';
 import { Fade } from 'reactstrap';
+import { isMobile } from 'react-device-detect'
 
 
 export class ServicesPage extends Component {
@@ -22,11 +22,13 @@ export class ServicesPage extends Component {
         this.props.decrementStep()
     }
     render() {
+        const display = { display: "inline-block" }
+        const displayNone = { display: "none" }
         return (
             <div className="section-services">
 
                 <div className="overlay">
-                    <img className="header-image" src='../img/scs_headerShip2.jpg'></img>
+                    <img className="header-image-naval" src='../img/scs_headerShip2.jpg'></img>
 
 
                 </div>
@@ -56,7 +58,7 @@ export class ServicesPage extends Component {
                             </div>
                         </Fade>
                         <Fade timeout={1500}>
-                            <div>
+                            <div style={isMobile ? displayNone : display}>
 
                                 <img className="image-software" src="../img/programmingIcon2.png"></img>
 

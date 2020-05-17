@@ -38,11 +38,11 @@ export class SoftwareProjectsPage extends Component {
                     <div className="services-box-right">
                         <div>
                             <Fade timeout={500}>
-                                <h2 className="header-software">Custom software applications , a few examples</h2>
-                                <p className="services-paragraph-software">SERPO : shipyard ERP system , mySQL database server</p>
-                                <p className="services-paragraph-software">SICA : house roof surface calculation</p>
-                                <p className="services-paragraph-software"> SORT : automatically loading and routing of truck fleet</p>
-                                <p className="services-paragraph-software">AMOB : kitched 3D modeller and cutting plan</p>
+                                <h2 className="header-software" id="headerSoftware">Custom software applications , a few examples</h2>
+                                <p className="services-paragraph-software black">SERPO : shipyard ERP system , mySQL database server</p>
+                                <p className="services-paragraph-software black">SICA : house roof surface calculation</p>
+                                <p className="services-paragraph-software black"> SORT : automatically loading and routing of truck fleet</p>
+                                <p className="services-paragraph-software black">AMOB : kitched 3D modeller and cutting plan</p>
                             </Fade>
                             <Fade timeout={1000}>
                                 <img className="image-software-collection" src="../img/scs_software3.png"></img>
