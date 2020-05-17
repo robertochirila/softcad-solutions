@@ -234,6 +234,29 @@ html, body {
     width: 90%;
     margin-top: 16%;
   }
+  .column-3 {
+    width: 96%;
+    margin-left: 2%;
+  }
+  #headerImagePartners {
+    background-repeat: repeat-y;
+    height: auto;
+    width: auto;
+  }
+  .partners-text {
+    color: #000000
+  }
+  .partner-paragraph {
+    color: #000000
+  }
+  .column-2 {
+    width: 96%;
+    margin-left: 2%;
+  }
+  .image-location {
+    height: auto;
+    width: 80%;
+  }
 }
 
 /* ----------- iPhone X ----------- */

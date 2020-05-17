@@ -9,7 +9,7 @@ export class LocationPage extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="section-location">
                 <div className="overlay">
                     <img className="header-image" src='../img/scs_headerShip2.jpg'></img>
                 </div>
@@ -33,8 +33,7 @@ export class LocationPage extends Component {
                         </Fade>
                     </div>
                 </div>
-
-            </div >
+            </div>
         )
     }
 }

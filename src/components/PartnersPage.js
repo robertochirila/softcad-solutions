@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { Fade } from 'reactstrap'
+import { isMobile } from 'react-device-detect'
 
 export class PartnersPage extends Component {
     moveNext = (e) => {
@@ -14,10 +15,12 @@ export class PartnersPage extends Component {
         this.props.decrementStep()
     }
     render() {
+        const displayNone = { display: "none" }
+        const display = { display: "inline-block" }
         return (
-            <div className="section-partners-location">
+            <div className="section-partners">
                 <div className="overlay">
-                    <img className="header-image" src='../img/scs_headerShip2.jpg'></img>
+                    <img className="header-image" style={isMobile ? displayNone : display} id="headerImagePartners" src='../img/scs_headerShip2.jpg'></img>
                 </div>
                 <div className="services-box">
                     <h2 className="partners-text">Our Partners</h2>
