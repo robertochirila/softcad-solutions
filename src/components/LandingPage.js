@@ -39,7 +39,7 @@ export class LandingPage extends Component {
                         <header>
                             {<Fade timeout={500}>
                                 <div className="overlay">
-                                    <img className="header-image-hero" src="../img/scs_headerShip.jpg" ></img>
+                                    <img className="header-image-hero" src="../img/scs_headerShip.jpg" alt="landingPageImage"></img>
                                 </div>
                             </Fade>}
                             <div className="header-text-box">
@@ -93,6 +93,12 @@ export class LandingPage extends Component {
                         <LocationPage decrementStep={this.decrementStep} />
                         <FooterNav decrementStep={this.decrementStep} step={step} />
                     </React.Fragment>
+                )
+            default:
+                return (
+                    <div>
+                        <p>Error</p>
+                    </div>
                 )
         }
     }

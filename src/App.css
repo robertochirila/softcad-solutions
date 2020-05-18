@@ -194,11 +194,34 @@ html, body {
 
 /* MEDIA QUERIES */
 
-/* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+/* ----------- iPhone 6, 7 and 8 plus ----------- */
 
 /* Portrait and Landscape */
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (orientation: portrait) {
+  /* STYLES GO HERE */
+  .header-image-hero {
+    height: 100vh;
+    width: auto;
+  }
+  .nav {
+    height: 9% !important;
+  }
+  #imageNavalProjects {
+    height: 120vh !important;
+  }
+  .header-text-box {
+    position: absolute;
+    top: 45% !important;
+    left: 5%;
+  }
+}
+
+/* ----------- iPhone X ----------- */
+
+/* Portrait and Landscape */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
   .header-image-hero {
     height: 100vh;
     width: auto;
@@ -333,9 +356,3 @@ html, body {
     margin: 0 0 0 5%;
   }
 }
-
-/* ----------- iPhone X ----------- */
-
-/* Portrait and Landscape */
-
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {}

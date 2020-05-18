@@ -18,11 +18,11 @@ export class NavalProjectsPage extends Component {
     render() {
         return (
             <div className="section-naval">
-                <Fade timeout={500}>
-                    <div className="overlay">
-                        <img className="header-image-naval" src='../img/scs_headerShip2.jpg' id="imageNavalProjects"></img>
-                    </div>
-                </Fade>
+
+                <div className="overlay">
+                    <img className="header-image-naval" src='../img/scs_headerShip2.jpg' id="imageNavalProjects" alt="navalPageImage"></img>
+                </div>
+
                 <div className="services-box">
                     <div className="services-box-left">
                         <Fade timeout={500}>
@@ -35,10 +35,10 @@ export class NavalProjectsPage extends Component {
                             <div style={{ padding: "2%" }}>
                                 <Carousel showThumbs={false}>
                                     <div>
-                                        <img className="image-naval-collection" src="../img/scs_naval1.png"></img>
+                                        <img className="image-naval-collection" src="../img/scs_naval1.png" alt="navalPageImage1"></img>
                                     </div>
                                     <div>
-                                        <img className="image-naval-collection" src="../img/scs_naval2.png"></img>
+                                        <img className="image-naval-collection" src="../img/scs_naval2.png" alt="navalPageImage2"></img>
                                     </div>
                                 </Carousel>
                             </div>
@@ -55,10 +55,10 @@ export class NavalProjectsPage extends Component {
                             <div style={{ padding: "2%" }}>
                                 <Carousel showThumbs={false}>
                                     <div>
-                                        <img className="image-naval-collection" src="../img/scs_naval3.png"></img>
+                                        <img className="image-naval-collection" src="../img/scs_naval3.png" alt="navalPageImage3"></img>
                                     </div>
                                     <div>
-                                        <img className="image-naval-collection" src="../img/scs_naval4.png"></img>
+                                        <img className="image-naval-collection" src="../img/scs_naval4.png" alt="navalPageImage4"></img>
                                     </div>
                                 </Carousel>
                             </div>

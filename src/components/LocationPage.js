@@ -15,7 +15,7 @@ export class LocationPage extends Component {
         return (
             <div className="section-location">
                 <div className="overlay">
-                    <img className="header-image" src='../img/scs_headerShip2.jpg'></img>
+                    <img className="header-image" src='../img/scs_headerShip2.jpg' alt="locationPageImage"></img>
                 </div>
                 <div className="services-box">
                     <Fade timeout={500}>
@@ -32,7 +32,7 @@ export class LocationPage extends Component {
                     <div className="column-2">
                         <Fade timeout={1000}>
                             <div className="alignMobile">
-                                <img src="../img/scs_location.jpg" className="image-location"></img>
+                                <img src="../img/scs_location.jpg" className="image-location" alt="locationPageImage1"></img>
                             </div>
                         </Fade>
                     </div>

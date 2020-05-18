@@ -28,7 +28,7 @@ export class ServicesPage extends Component {
             <div className="section-services">
                 <Fade timeout={500}>
                     <div className="overlay">
-                        <img className="header-image-naval" src='../img/scs_headerShip2.jpg'></img>
+                        <img className="header-image-naval" src='../img/scs_headerShip2.jpg' alt="servicesPageImage"></img>
 
 
                     </div>
@@ -44,7 +44,7 @@ export class ServicesPage extends Component {
                         <Fade timeout={1500}>
                             <div>
 
-                                <img src="../img/scs_navalProject3.PNG" className="image-naval"></img>
+                                <img src="../img/scs_navalProject3.PNG" className="image-naval" alt="servicePageImage2"></img>
 
                             </div>
 
@@ -61,7 +61,7 @@ export class ServicesPage extends Component {
                         <Fade timeout={1500}>
                             <div style={isMobile ? displayNone : display}>
 
-                                <img className="image-software" src="../img/programmingIcon2.png"></img>
+                                <img className="image-software" src="../img/programmingIcon2.png" alt="servicePageImage3"></img>
 
                             </div>
 
