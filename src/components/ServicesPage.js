@@ -54,7 +54,7 @@ export class ServicesPage extends Component {
                     <div className="services-box-right">
                         <Fade timeout={1000}>
                             <div>
-                                <p className="services-paragraph">Our main goal is to create new software applications for ship design, 3D modelling, CAD/CAM production information,custom oriented applications</p>
+                                <p className="services-paragraph">Our main goal is to create new software applications for ship design, 3D modelling and CAD/CAM production information</p>
                                 <button onClick={this.moveNext2Steps} className="button" name="software">Software Projects</button>
                             </div>
                         </Fade>

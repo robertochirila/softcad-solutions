@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
 import { Fade } from 'reactstrap'
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
 export class SoftwareProjectsPage extends Component {
     moveNext = (e) => {
@@ -28,17 +30,21 @@ export class SoftwareProjectsPage extends Component {
                                 <p className="services-paragraph-software">ShellPlates : ship 3D surfaces modeller, seams and butts arrangement , surface expansion 2D parts</p>
                             </Fade>
                             <Fade timeout={1250}>
-                                <img className="image-software-collection" src="../img/scs_software1.png"></img>
-                                <img className="image-software-collection" src="../img/scs_software2.png"></img>
+                                <div style={{ padding: "2%", marginBottom: "15%" }}>
+                                    <Carousel showThumbs={false}>
+                                        <div>
+                                            <img className="image-software-collection" src="../img/scs_software1.png"></img>
+                                        </div>
+                                        <div>
+                                            <img className="image-software-collection" src="../img/scs_software2.png"></img>
+                                        </div>
+                                    </Carousel>
+                                </div>
                             </Fade>
                         </div>
-                        <div>
-                            <img></img>
-                        </div>
-
                     </div>
                     <div className="services-box-right">
-                        <div>
+                        <div style={{ padding: "2%" }}>
                             <Fade timeout={1000}>
                                 <h2 className="header-software" id="headerSoftware">Custom software applications , a few examples</h2>
                                 <p className="services-paragraph-software black">SERPO : shipyard ERP system , mySQL database server</p>
@@ -47,14 +53,18 @@ export class SoftwareProjectsPage extends Component {
                                 <p className="services-paragraph-software black">AMOB : kitched 3D modeller and cutting plan</p>
                             </Fade>
                             <Fade timeout={1250}>
-                                <img className="image-software-collection" src="../img/scs_software3.png"></img>
-                                <img className="image-software-collection" src="../img/scs_software4.png"></img>
+                                <div>
+                                    <Carousel showThumbs={false}>
+                                        <div>
+                                            <img className="image-software-collection" src="../img/scs_software3.png"></img>
+                                        </div>
+                                        <div>
+                                            <img className="image-software-collection" src="../img/scs_software4.png"></img>
+                                        </div>
+                                    </Carousel>
+                                </div>
                             </Fade>
                         </div>
-                        <div>
-                            <img></img>
-                        </div>
-
                     </div>
                 </div>
             </div>
