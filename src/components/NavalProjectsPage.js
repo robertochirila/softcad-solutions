@@ -14,10 +14,11 @@ export class NavalProjectsPage extends Component {
     render() {
         return (
             <div className="section-naval">
-                <div className="overlay">
-                    <img className="header-image-naval" src='../img/scs_headerShip2.jpg' id="imageNavalProjects"></img>
-                </div>
-
+                <Fade timeout={500}>
+                    <div className="overlay">
+                        <img className="header-image-naval" src='../img/scs_headerShip2.jpg' id="imageNavalProjects"></img>
+                    </div>
+                </Fade>
                 <div className="services-box">
                     <div className="services-box-left">
                         <Fade timeout={500}>

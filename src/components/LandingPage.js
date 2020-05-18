@@ -48,12 +48,10 @@ export class LandingPage extends Component {
                                     <h1 className="header-text">Softcad Solutions <br /> Designing ships and <br /> custom software since 2002.</h1>
                                 </Fade>
                                 <Fade timeout={1000}>
-                                    <button onClick={this.incrementStep} className="header-button">Show me More</button>
+                                    <button onClick={this.incrementStep} className="button" id="showButton">Show me More</button>
                                 </Fade>
                             </div>
                         </header>
-                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
-
                     </React.Fragment>
                 )
                 break;
@@ -61,7 +59,7 @@ export class LandingPage extends Component {
                 return (
                     <React.Fragment>
                         <ServicesPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
-                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} step={step} />
                     </React.Fragment>
                 )
                 break;
@@ -69,7 +67,7 @@ export class LandingPage extends Component {
                 return (
                     <React.Fragment>
                         <NavalProjectsPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
-                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} step={step} />
                     </React.Fragment>
                 )
                 break
@@ -77,7 +75,7 @@ export class LandingPage extends Component {
                 return (
                     <React.Fragment>
                         <SoftwareProjectsPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
-                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} step={step} />
                     </React.Fragment>
                 )
                 break;
@@ -85,7 +83,7 @@ export class LandingPage extends Component {
                 return (
                     <React.Fragment>
                         <PartnersPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
-                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
+                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} step={step} />
                     </React.Fragment>
                 )
                 break

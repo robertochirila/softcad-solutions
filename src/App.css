@@ -16,8 +16,19 @@ html, body {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: 5%;
+  height: 8%;
   background-color: transparent;
+  color: white;
+  text-align: center;
+}
+
+.nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 8%;
+  background-color: red;
   color: white;
   text-align: center;
 }
@@ -30,6 +41,22 @@ html, body {
   background-attachment: fixed;
   width: 100%;
   height: 100%;
+}
+
+.header-image {
+  width: 100%;
+}
+
+.header-image-software {
+  width: 100%;
+}
+
+.header-image-partners {
+  width: 100%;
+}
+
+.header-image-location {
+  width: 100%;
 }
 
 .overlay {
@@ -108,7 +135,26 @@ html, body {
 
 /* Buttons */
 
-.button-next {}
+.button {
+  background: transparent;
+  text-transform: uppercase;
+  padding: 10px 12px;
+  color: #ffffff;
+  transition: 0.3s color, 0.3s background ease-in;
+}
+
+.button:hover {
+  background: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+#buttonPrev {}
+
+#buttonNext {
+  margin-left: 5%;
+  margin-bottom: 5%;
+}
 
 .button-prev {}
 
@@ -244,10 +290,12 @@ html, body {
     width: auto;
   }
   .partners-text {
-    color: #000000
+    color: #000000;
+    text-align: center;
   }
   .partner-paragraph {
-    color: #000000
+    color: #000000;
+    text-align: center
   }
   .column-2 {
     width: 96%;
@@ -256,6 +304,9 @@ html, body {
   .image-location {
     height: auto;
     width: 80%;
+  }
+  .image-wrapper-mobile {
+    text-align: center;
   }
 }
 
