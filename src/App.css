@@ -24,11 +24,12 @@ html, body {
 
 .nav {
   position: fixed;
+  display: inline-block;
   left: 0;
   top: 0;
   width: 100%;
   height: 8%;
-  background-color: red;
+  background-color: #1900ff94;
   color: white;
   text-align: center;
 }
@@ -215,7 +216,7 @@ html, body {
   }
   .services-box {
     position: absolute;
-    top: 5%;
+    top: 10%;
     left: 2%;
     right: 5%
   }
@@ -237,7 +238,7 @@ html, body {
     padding-bottom: 10%;
   }
   .header-image-naval {
-    height: 115vh;
+    height: 125vh;
     width: auto;
   }
   #headerNaval {
@@ -247,7 +248,7 @@ html, body {
     color: #000000;
   }
   #imageNavalProjects {
-    height: 82vh;
+    height: 88vh;
   }
   .services-paragraph {
     font-size: 120%;
@@ -307,6 +308,14 @@ html, body {
   }
   .image-wrapper-mobile {
     text-align: center;
+  }
+  #buttonPrev {
+    float: left;
+    margin: 1%;
+  }
+  #buttonNext {
+    float: right;
+    margin: 1%;
   }
 }
 
