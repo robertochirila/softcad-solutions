@@ -23,7 +23,7 @@ export class PartnersPage extends Component {
                     <img className="header-image" style={isMobile ? displayNone : display} id="headerImagePartners" src='../img/scs_headerShip2.jpg' alt="partnersPageImage"></img>
                 </div>
                 <div className="services-box">
-                    <h2 className="partners-text">Our Partners</h2>
+                    <h2 className={isTablet ? "partners-text black" : "partners-text"}>Our Partners</h2>
                     <div className="row">
                         <div className="column-3">
                             <Fade timeout={500}>

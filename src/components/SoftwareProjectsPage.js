@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Fade } from 'reactstrap'
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import { isTablet } from 'react-device-detect'
+import { isMobile, isTablet, isDesktop } from 'react-device-detect'
 export class SoftwareProjectsPage extends Component {
     moveNext = (e) => {
         e.preventDefault()
@@ -29,10 +29,10 @@ export class SoftwareProjectsPage extends Component {
                     <div className="services-box-left">
                         <div>
                             <Fade timeout={1000}>
-                                <h2 className="header-software">Ship design software applications and more</h2>
+                                <h2 className={isTablet ? "header-software black" : "header-software"}>Ship design software applications and more</h2>
                                 <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>Easy Ship Design : ship design system</p>
-                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>Autonesting : plates and profiles parts automatic nesting system , cnc files code generation</p>
-                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>ShellPlates : ship 3D surfaces modeller, seams and butts arrangement , surface expansion 2D parts</p>
+                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>Autonesting : plates and profiles parts automatic nesting system</p>
+                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>ShellPlates : ship 3D surfaces modeller, seams and butts arrangement, surface expansion 2D parts</p>
                             </Fade>
                             <Fade timeout={1250}>
                                 <div style={{ padding: "2%", marginBottom: "15%" }}>
@@ -49,13 +49,13 @@ export class SoftwareProjectsPage extends Component {
                         </div>
                     </div>
                     <div className="services-box-right">
-                        <div style={{ padding: "2%" }}>
+                        <div style={{ padding: "0" }}>
                             <Fade timeout={1000}>
-                                <h2 className="header-software" id="headerSoftware">Custom software applications , a few examples</h2>
-                                <p className="services-paragraph-software black">SERPO : shipyard ERP system , mySQL database server</p>
-                                <p className="services-paragraph-software black">SICA : house roof surface calculation</p>
-                                <p className="services-paragraph-software black"> SORT : automatically loading and routing of truck fleet</p>
-                                <p className="services-paragraph-software black">AMOB : kitched 3D modeller and cutting plan</p>
+                                <h2 className={isMobile ? "header-software black" : "header-software"} id="headerSoftwareMobile">Custom software applications, a few examples</h2>
+                                <p className={isMobile ? "services-paragraph black" : "services-paragraph"}>SERPO : shipyard ERP system, mySQL database server</p>
+                                <p className={isMobile ? "services-paragraph black" : "services-paragraph"}>SICA : house roof surface calculation</p>
+                                <p className={isMobile ? "services-paragraph black" : "services-paragraph"}> SORT : automatically loading and routing of truck fleet</p>
+                                <p className={isMobile ? "services-paragraph black" : "services-paragraph"}>AMOB : kitched 3D modeller and cutting plan</p>
                             </Fade>
                             <Fade timeout={1250}>
                                 <div>

@@ -87,7 +87,7 @@ html, body {
   background-position: center;
   background-attachment: fixed;
   width: 100%;
-  height: 100%;
+  height: 105vh;
 }
 
 .image-software {
@@ -154,9 +154,16 @@ html, body {
   border-color: #ffffff;
 }
 
-#buttonPrev {}
+.button:focus {
+  outline: 0
+}
+
+#buttonPrev {
+  border: none;
+}
 
 #buttonNext {
+  border: none;
   margin-left: 5%;
   margin-bottom: 5%;
 }
@@ -227,13 +234,16 @@ html, body {
     top: 45% !important;
     left: 5%;
   }
+  #headerSoftwareMobile {
+    margin-top: 20% !important;
+  }
 }
 
 /* ----------- iPhone X ----------- */
 
-/* Portrait and Landscape */
+/* Portrait */
 
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
   .header-image-hero {
     height: 100vh;
     width: auto;
@@ -312,6 +322,9 @@ html, body {
     color: #000000;
     margin-top: 10%;
   }
+  #headerSoftwareMobile {
+    margin-top: 15%;
+  }
   .services-paragraph-software {
     font-size: 80%;
     text-align: left;
@@ -332,11 +345,11 @@ html, body {
     width: 96%;
     margin-left: 2%;
   }
-  #headerImagePartners {
+  /*#headerImagePartners {
     background-repeat: repeat-y;
     height: auto;
     width: auto;
-  }
+  }*/
   .partners-text {
     color: #000000;
     text-align: center;
@@ -359,11 +372,11 @@ html, body {
   }
   #buttonPrev {
     float: left;
-    margin: 1%;
+    border: none;
   }
   #buttonNext {
     float: right;
-    margin: 1%;
+    border: none;
   }
   .location-text {
     font-size: 120%;
@@ -372,6 +385,12 @@ html, body {
   .alignMobile {
     margin: 0 0 0 5%;
   }
+}
+
+/* IPHONE X LANDSCAPE */
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
+  /* STYLES GO HERE */
 }
 
 /* IPAD PRO */

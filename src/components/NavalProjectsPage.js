@@ -33,7 +33,7 @@ export class NavalProjectsPage extends Component {
                     <div className="services-box-left">
                         <Fade timeout={500}>
                             <div>
-                                <h2 className="header-naval">EasyShipDesign projects</h2>
+                                <h2 className={isTablet ? "header-naval black" : "header-naval"}>EasyShipDesign projects</h2>
                                 <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>ESD screenshots and pictures during ship building stages</p>
                             </div>
                         </Fade>
@@ -53,7 +53,7 @@ export class NavalProjectsPage extends Component {
                     <div className="services-box-right" id="servicesBoxRightMobile">
                         <Fade timeout={500}>
                             <div>
-                                <h2 className="header-naval" id="headerNaval">Ships and more...</h2>
+                                <h2 className={isTablet ? "header-naval black" : "header-naval"} id="headerNaval">Ships and more...</h2>
                                 <p className={isTablet ? "services-paragraph black" : "services-paragraph"} id="servicesParagraph">We can create ship 3D model but also any kind of steel structure</p>
                             </div>
                         </Fade>
