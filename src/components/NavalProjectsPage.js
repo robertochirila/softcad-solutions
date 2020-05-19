@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { Fade } from 'reactstrap';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import { isTablet } from 'react-device-detect'
 
 
 
@@ -19,16 +20,21 @@ export class NavalProjectsPage extends Component {
         return (
             <div className="section-naval">
 
-                <div className="overlay">
-                    <img className="header-image-naval" src='../img/scs_headerShip2.jpg' id="imageNavalProjects" alt="navalPageImage"></img>
-                </div>
+                {isTablet ?
+                    <div className="overlay">
+                    </div>
+                    :
+                    <div className="overlay">
+                        <img className="header-image-naval" src='../img/scs_headerShip2.jpg' alt="landingPageImage"></img>
+                    </div>
+                }
 
                 <div className="services-box">
                     <div className="services-box-left">
                         <Fade timeout={500}>
                             <div>
                                 <h2 className="header-naval">EasyShipDesign projects</h2>
-                                <p className="services-paragraph">ESD screenshots and pictures during ship building stages</p>
+                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>ESD screenshots and pictures during ship building stages</p>
                             </div>
                         </Fade>
                         <Fade timeout={1000}>
@@ -48,7 +54,7 @@ export class NavalProjectsPage extends Component {
                         <Fade timeout={500}>
                             <div>
                                 <h2 className="header-naval" id="headerNaval">Ships and more...</h2>
-                                <p className="services-paragraph" id="servicesParagraph">We can create ship 3D model but also any kind of steel structure</p>
+                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"} id="servicesParagraph">We can create ship 3D model but also any kind of steel structure</p>
                             </div>
                         </Fade>
                         <Fade timeout={1000}>

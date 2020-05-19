@@ -192,6 +192,15 @@ html, body {
   width: 300px;
 }
 
+.black {
+  color: #000000 !important;
+}
+
+.blackButton {
+  background: transparent;
+  color: #000000;
+}
+
 /* MEDIA QUERIES */
 
 /* ----------- iPhone 6, 7 and 8 plus ----------- */
@@ -208,6 +217,9 @@ html, body {
     height: 9% !important;
   }
   #imageNavalProjects {
+    height: 120vh !important;
+  }
+  .header-image-naval {
     height: 120vh !important;
   }
   .header-text-box {
@@ -265,7 +277,7 @@ html, body {
     padding-bottom: 10%;
   }
   .header-image-naval {
-    height: 125vh;
+    height: 110vh;
     width: auto;
   }
   #headerNaval {
@@ -298,6 +310,7 @@ html, body {
   }
   #headerSoftware {
     color: #000000;
+    margin-top: 10%;
   }
   .services-paragraph-software {
     font-size: 80%;
@@ -306,6 +319,10 @@ html, body {
   }
   .black {
     color: #000000 !important;
+  }
+  .blackButton {
+    border: #000000;
+    color: #000000;
   }
   .image-software-collection {
     height: auto;
@@ -354,5 +371,38 @@ html, body {
   }
   .alignMobile {
     margin: 0 0 0 5%;
+  }
+}
+
+/* IPAD PRO */
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+  .header-image-hero {
+    height: 100vh;
+  }
+  .header-text-box {
+    top: 70%;
+  }
+  .nav {
+    height: 6%;
+  }
+  #buttonPrev {
+    float: left;
+    margin: 1%;
+  }
+  #buttonNext {
+    float: right;
+    margin: 1%;
+  }
+  .services-box-left {
+    width: 99%;
+  }
+  .services-box-right {
+    width: 99%;
+  }
+  .tabletBackground {
+    background-color: #3874c0;
+    min-height: 100vh;
+    overflow: hidden;
   }
 }

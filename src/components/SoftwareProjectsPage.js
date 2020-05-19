@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { Fade } from 'reactstrap'
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-
+import { isTablet } from 'react-device-detect'
 export class SoftwareProjectsPage extends Component {
     moveNext = (e) => {
         e.preventDefault()
@@ -15,18 +15,24 @@ export class SoftwareProjectsPage extends Component {
     render() {
         return (
             <div className="section-software">
-                <div className="overlay">
-                    <img className="header-image" src='../img/scs_headerShip2.jpg' alt="landingPageImage"></img>
-                </div>
+                {isTablet ?
+                    <div className="overlay">
+                    </div>
+                    :
+                    <div className="overlay">
+                        <img className="header-image-naval" src='../img/scs_headerShip2.jpg' alt="landingPageImage"></img>
+                    </div>
+                }
+
 
                 <div className="services-box">
                     <div className="services-box-left">
                         <div>
                             <Fade timeout={1000}>
                                 <h2 className="header-software">Ship design software applications and more</h2>
-                                <p className="services-paragraph-software">Easy Ship Design : ship design system</p>
-                                <p className="services-paragraph-software">Autonesting : plates and profiles parts automatic nesting system , cnc files code generation</p>
-                                <p className="services-paragraph-software">ShellPlates : ship 3D surfaces modeller, seams and butts arrangement , surface expansion 2D parts</p>
+                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>Easy Ship Design : ship design system</p>
+                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>Autonesting : plates and profiles parts automatic nesting system , cnc files code generation</p>
+                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>ShellPlates : ship 3D surfaces modeller, seams and butts arrangement , surface expansion 2D parts</p>
                             </Fade>
                             <Fade timeout={1250}>
                                 <div style={{ padding: "2%", marginBottom: "15%" }}>

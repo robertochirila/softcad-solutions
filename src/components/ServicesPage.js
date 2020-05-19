@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Fade } from 'reactstrap';
 import { isMobile } from 'react-device-detect'
+import { isTablet } from 'react-device-detect'
 
 
 export class ServicesPage extends Component {
@@ -27,18 +28,21 @@ export class ServicesPage extends Component {
         return (
             <div className="section-services">
                 <Fade timeout={500}>
-                    <div className="overlay">
-                        <img className="header-image-naval" src='../img/scs_headerShip2.jpg' alt="servicesPageImage"></img>
-
-
-                    </div>
+                    {isTablet ?
+                        <div className="overlay">
+                        </div>
+                        :
+                        <div className="overlay">
+                            <img className="header-image-naval" src='../img/scs_headerShip2.jpg' alt="landingPageImage"></img>
+                        </div>
+                    }
                 </Fade>
                 <div className="services-box">
                     <div className="services-box-left">
                         <Fade timeout={1000}>
                             <div>
-                                <p className="services-paragraph">We already have the tools and expertise and we can create detailed 3D ship model database, drawings and complete shipbuilding production information</p>
-                                <button onClick={this.moveNext} className="button" name="naval">Naval Projects</button>
+                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>We already have the tools and expertise and we can create detailed 3D ship model database, drawings and complete shipbuilding production information</p>
+                                <button onClick={this.moveNext} className={isTablet ? "button blackButton" : "button"} name="naval">Naval Projects</button>
                             </div>
                         </Fade>
                         <Fade timeout={1500}>
@@ -54,8 +58,8 @@ export class ServicesPage extends Component {
                     <div className="services-box-right">
                         <Fade timeout={1000}>
                             <div>
-                                <p className="services-paragraph">Our main goal is to create new software applications for ship design, 3D modelling and CAD/CAM production information</p>
-                                <button onClick={this.moveNext2Steps} className="button" name="software">Software Projects</button>
+                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>Our main goal is to create new software applications for ship design, 3D modelling and CAD/CAM production information</p>
+                                <button onClick={this.moveNext2Steps} className={isTablet ? "button blackButton" : "button"} name="software">Software Projects</button>
                             </div>
                         </Fade>
                         <Fade timeout={1500}>
