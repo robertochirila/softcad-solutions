@@ -357,7 +357,8 @@ html, body {
   }
   .partner-paragraph {
     color: #000000;
-    text-align: center
+    text-align: center;
+    font-size: 80%;
   }
   .column-2 {
     width: 96%;
@@ -391,11 +392,97 @@ html, body {
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape) {
   /* STYLES GO HERE */
+  .header-text-box {
+    top: 50%;
+  }
+  .header-text {
+    font-size: 140%;
+  }
+  .button {
+    font-size: 100%;
+  }
+  .nav {
+    height: 14%;
+  }
+  .services-paragraph {
+    font-size: 100%;
+  }
+  .services-box {
+    margin-top: 8%;
+  }
+  #buttonPrev {
+    float: left;
+  }
+  #buttonNext {
+    float: right;
+  }
+  .header-naval {
+    font-size: 100%;
+  }
+  .image-naval-collection {
+    width: 150px;
+    height: 150px;
+  }
+  .overwriteColumnWidth {
+    width: 96% !important;
+    float: left;
+  }
+  #servicesParagraphLandscape {
+    margin-bottom: 20%;
+  }
+  .partners-text {
+    color: #000000;
+    font-size: 120%;
+  }
+  .partner-paragraph {
+    color: #000000;
+    font-size: 80%;
+    text-align: center;
+  }
+  .logo-partners {
+    height: 100px;
+    width: 200px;
+  }
+  .location-text {
+    font-size: 100%;
+  }
+  .image-wrapper-mobile {
+    text-align: center;
+  }
+  .column-3 {
+    width: 33.3%;
+  }
+  #column-2-landscape_1 {
+    width: 49.9%;
+    float: left;
+  }
+  #column-2-landscape_2 {
+    width: 49.9%;
+    float: left;
+  }
+  .image-location {
+    width: 200px;
+    height: 200px;
+  }
+  .header-image-naval {
+    height: 120vh;
+  }
 }
 
-/* IPAD PRO */
+/* IPAD PRO LANDSCAPE */
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  .nav {
+    height: 8% !important;
+  }
+  .image-software-collection {
+    height: 600px;
+  }
+}
+
+/* IPAD PRO PORTRAIT */
+
+@media only screen and (min-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
   .header-image-hero {
     height: 100vh;
   }
@@ -423,5 +510,14 @@ html, body {
     background-color: #3874c0;
     min-height: 100vh;
     overflow: hidden;
+  }
+}
+
+@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .header-image-hero {
+    height: 100vh;
+  }
+  #servicesParagraphLandscape {
+    margin-bottom: 26%;
   }
 }

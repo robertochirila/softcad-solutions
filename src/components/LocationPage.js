@@ -26,7 +26,7 @@ export class LocationPage extends Component {
                     <Fade timeout={500}>
                         <h2 className={isTablet ? "location-text black" : "location-text"}>Location</h2>
                     </Fade>
-                    <div className="column-2">
+                    <div className="column-2" id="column-2-landscape_1">
                         <Fade timeout={500}>
                             <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>From 2004 our company has been located in Galati, Romania.</p>
                             <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>Main office : Software Park Galati, 23 Strada Portului, Galati, 800025.</p>
@@ -34,7 +34,7 @@ export class LocationPage extends Component {
                             <a href="mailto:softcad.solutions@yahoo.com?Subject=Hello" style={isMobile ? alignAnchorMobile : null} target="_top"> Send Mail</a>
                         </Fade>
                     </div>
-                    <div className="column-2">
+                    <div className="column-2" id="column-2-landscape_2">
                         <Fade timeout={1000}>
                             <div className="alignMobile">
                                 <img src="../img/scs_location.jpg" className="image-location" alt="locationPageImage1"></img>

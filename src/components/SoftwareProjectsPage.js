@@ -26,13 +26,13 @@ export class SoftwareProjectsPage extends Component {
 
 
                 <div className="services-box">
-                    <div className="services-box-left">
+                    <div className={isMobile ? "services-box-left overwriteColumnWidth" : "services-box-left"}>
                         <div>
                             <Fade timeout={1000}>
                                 <h2 className={isTablet ? "header-software black" : "header-software"}>Ship design software applications and more</h2>
                                 <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>Easy Ship Design : ship design system</p>
                                 <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>Autonesting : plates and profiles parts automatic nesting system</p>
-                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>ShellPlates : ship 3D surfaces modeller, seams and butts arrangement, surface expansion 2D parts</p>
+                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"} id="servicesParagraphLandscape">ShellPlates : ship 3D surfaces modeller, seams and butts arrangement, surface expansion 2D parts</p>
                             </Fade>
                             <Fade timeout={1250}>
                                 <div style={{ padding: "2%", marginBottom: "15%" }}>
@@ -48,7 +48,7 @@ export class SoftwareProjectsPage extends Component {
                             </Fade>
                         </div>
                     </div>
-                    <div className="services-box-right">
+                    <div className={isMobile ? "services-box-left overwriteColumnWidth" : "services-box-left"}>
                         <div style={{ padding: "0" }}>
                             <Fade timeout={1000}>
                                 <h2 className={isMobile ? "header-software black" : "header-software"} id="headerSoftwareMobile">Custom software applications, a few examples</h2>
