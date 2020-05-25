@@ -28,7 +28,7 @@ export class PartnersPage extends Component {
                         <div className="column-3">
                             <Fade timeout={500}>
                                 <div className="image-wrapper-mobile">
-                                    <img src="../img/scs_partners1.png" className="logo-partners" alt="partnersPageImage1"></img>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners1.png" className="logo-partners" alt="partnersPageImage1"></img>
                                 </div>
                                 <p className={isTablet ? "partner-paragraph black" : "partner-paragraph"}>Damen Shipyard (Galati Romania, Gorinchem Holland, Shipyard Yichang China, Nakilat Qatar)</p>
                             </Fade>
@@ -36,7 +36,7 @@ export class PartnersPage extends Component {
                         <div className="column-3">
                             <Fade timeout={750}>
                                 <div className="image-wrapper-mobile">
-                                    <img src="../img/scs_partners2.png" className="logo-partners" alt="partnersPageImage2"></img>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners2.png" className="logo-partners" alt="partnersPageImage2"></img>
                                 </div>
                                 <p className={isTablet ? "partner-paragraph black" : "partner-paragraph"}>Vard Shipyard (Tulcea Romania, Braila Romania, Vung Tau , Vietnam, Aukra Norway)</p>
                             </Fade>
@@ -44,7 +44,7 @@ export class PartnersPage extends Component {
                         <div className="column-3">
                             <Fade timeout={1000}>
                                 <div className="image-wrapper-mobile">
-                                    <img src="../img/scs_partners3.png" className="logo-partners" alt="partnersPageImage3"></img>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners3.png" className="logo-partners" alt="partnersPageImage3"></img>
                                 </div>
                                 <p className={isTablet ? "partner-paragraph black" : "partner-paragraph"}>Arabesque Galati, Romania</p>
                             </Fade>
@@ -54,7 +54,7 @@ export class PartnersPage extends Component {
                         <div className="column-3">
                             <Fade timeout={1250}>
                                 <div className="image-wrapper-mobile">
-                                    <img src="../img/scs_partners4.png" className="logo-partners" alt="partnersPageImage4"></img>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners4.png" className="logo-partners" alt="partnersPageImage4"></img>
                                 </div>
                                 <p className={isTablet ? "partner-paragraph black" : "partner-paragraph"}>Lamprell Shipyard Sharjah, UAE</p>
                             </Fade>
@@ -63,7 +63,7 @@ export class PartnersPage extends Component {
                             <Fade timeout={1500}>
                                 <div className="image-wrapper-mobile">
 
-                                    <img src="../img/scs_partners5.png" className="logo-partners" alt="partnersPageImage5"></img>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners5.png" className="logo-partners" alt="partnersPageImage5"></img>
                                 </div>
                                 <p className={isTablet ? "partner-paragraph black" : "partner-paragraph"}>NASDIS Galati, Romania</p>
                             </Fade>
@@ -71,7 +71,7 @@ export class PartnersPage extends Component {
                         <div className="column-3">
                             <Fade timeout={1750}>
                                 <div className="image-wrapper-mobile">
-                                    <img src="../img/scs_partners6.png" className="logo-partners" alt="partnersPageImage6"></img>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners6.png" className="logo-partners" alt="partnersPageImage6"></img>
                                 </div>
                                 <p className={isTablet ? "partner-paragraph black" : "partner-paragraph"}>Ship Design Group Galati, Romania</p>
                             </Fade>
@@ -82,7 +82,7 @@ export class PartnersPage extends Component {
                             <Fade timeout={2000}>
                                 <div className="image-wrapper-mobile">
 
-                                    <img src="../img/scs_partners7.png" className="logo-partners" alt="partnersPageImage7"></img>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners7.png" className="logo-partners" alt="partnersPageImage7"></img>
                                 </div>
                                 <p className={isTablet ? "partner-paragraph black" : "partner-paragraph"}>Icepronav Galati, Romania</p>
                             </Fade>
@@ -91,7 +91,7 @@ export class PartnersPage extends Component {
                             <Fade timeout={2250}>
                                 <div className="image-wrapper-mobile">
 
-                                    <img src="../img/scs_partners8.png" className="logo-partners" alt="partnersPageImage8"></img>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners8.png" className="logo-partners" alt="partnersPageImage8"></img>
                                 </div>
                                 <p className={isTablet ? "partner-paragraph black" : "partner-paragraph"}>ATG Shipyard Giurgiu, Romania</p>
                             </Fade>
@@ -100,7 +100,7 @@ export class PartnersPage extends Component {
                             <Fade timeout={2500}>
                                 <div className="image-wrapper-mobile">
 
-                                    <img src="../img/scs_partners9.png" className="logo-partners" alt="partnersPageImage9"></img>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners9.png" className="logo-partners" alt="partnersPageImage9"></img>
                                 </div>
                                 <p className={isTablet ? "partner-paragraph black" : "partner-paragraph"}>Ginton Naval Architect, Holland</p>
                             </Fade>

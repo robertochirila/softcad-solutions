@@ -39,7 +39,7 @@ export class LandingPage extends Component {
                         <header>
                             {<Fade timeout={500}>
                                 <div className="overlay">
-                                    <img className="header-image-hero" src="../img/scs_headerShip.jpg" alt="landingPageImage"></img>
+                                    <img className="header-image-hero" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_headerShip.jpg" alt="landingPageImage"></img>
                                 </div>
                             </Fade>}
                             <div className="header-text-box">
