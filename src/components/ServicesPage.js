@@ -33,7 +33,7 @@ export class ServicesPage extends Component {
                         </div>
                         :
                         <div className="overlay">
-                            <img className="header-image-naval" src='../img/scs_headerShip2.jpg' alt="landingPageImage"></img>
+                            <img className="header-image-naval" src='https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_headerShip2.jpg' alt="landingPageImage"></img>
                         </div>
                     }
                 </Fade>
@@ -65,7 +65,7 @@ export class ServicesPage extends Component {
                         <Fade timeout={1500}>
                             <div style={isMobile ? displayNone : display}>
 
-                                <img className="image-software" src="../img/programmingIcon2.png" alt="servicePageImage3"></img>
+                                <img className="image-software" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/programmingIcon2.png" alt="servicePageImage3"></img>
 
                             </div>
 

@@ -38,10 +38,10 @@ export class SoftwareProjectsPage extends Component {
                                 <div style={{ padding: "2%", marginBottom: "15%" }}>
                                     <Carousel showThumbs={false}>
                                         <div>
-                                            <img className="image-software-collection" src="../img/scs_software1.png" alt="landingPageImage1"></img>
+                                            <img className="image-software-collection" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_software1.png" alt="landingPageImage1"></img>
                                         </div>
                                         <div>
-                                            <img className="image-software-collection" src="../img/scs_software2.png" alt="landingPageImage2"></img>
+                                            <img className="image-software-collection" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_software2.png" alt="landingPageImage2"></img>
                                         </div>
                                     </Carousel>
                                 </div>
@@ -61,10 +61,10 @@ export class SoftwareProjectsPage extends Component {
                                 <div>
                                     <Carousel showThumbs={false}>
                                         <div>
-                                            <img className="image-software-collection" src="../img/scs_software3.png" alt="landingPageImage3"></img>
+                                            <img className="image-software-collection" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_software3.png" alt="landingPageImage3"></img>
                                         </div>
                                         <div>
-                                            <img className="image-software-collection" src="../img/scs_software4.png" alt="landingPageImage4"></img>
+                                            <img className="image-software-collection" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_software4.png" alt="landingPageImage4"></img>
                                         </div>
                                     </Carousel>
                                 </div>

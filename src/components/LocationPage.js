@@ -37,7 +37,7 @@ export class LocationPage extends Component {
                     <div className="column-2" id="column-2-landscape_2">
                         <Fade timeout={1000}>
                             <div className="alignMobile">
-                                <img src="../img/scs_location.jpg" className="image-location" alt="locationPageImage1"></img>
+                                <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_location.jpg" className="image-location" alt="locationPageImage1"></img>
                             </div>
                         </Fade>
                     </div>

@@ -41,10 +41,10 @@ export class NavalProjectsPage extends Component {
                             <div style={{ padding: "2%" }}>
                                 <Carousel showThumbs={false}>
                                     <div>
-                                        <img className="image-naval-collection" src="../img/scs_naval1.png" alt="navalPageImage1"></img>
+                                        <img className="image-naval-collection" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval1.png" alt="navalPageImage1"></img>
                                     </div>
                                     <div>
-                                        <img className="image-naval-collection" src="../img/scs_naval2.png" alt="navalPageImage2"></img>
+                                        <img className="image-naval-collection" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval2.png" alt="navalPageImage2"></img>
                                     </div>
                                 </Carousel>
                             </div>
@@ -61,10 +61,10 @@ export class NavalProjectsPage extends Component {
                             <div style={{ padding: "2%" }}>
                                 <Carousel showThumbs={false}>
                                     <div>
-                                        <img className="image-naval-collection" src="../img/scs_naval3.png" alt="navalPageImage3"></img>
+                                        <img className="image-naval-collection" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval3.png" alt="navalPageImage3"></img>
                                     </div>
                                     <div>
-                                        <img className="image-naval-collection" src="../img/scs_naval4.png" alt="navalPageImage4"></img>
+                                        <img className="image-naval-collection" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval4.png" alt="navalPageImage4"></img>
                                     </div>
                                 </Carousel>
                             </div>
