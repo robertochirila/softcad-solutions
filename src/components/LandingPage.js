@@ -37,20 +37,8 @@ export class LandingPage extends Component {
                 return (
                     <React.Fragment>
                         <header>
-                            {<Fade timeout={500}>
-                                <div className="overlay">
-                                    <img className="header-image-hero" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_headerShip.jpg" alt="landingPageImage"></img>
-                                </div>
-                            </Fade>}
-                            <div className="header-text-box">
-
-                                <Fade timeout={750}>
-                                    <h1 className="header-text">Softcad Solutions <br /> Designing ships and <br /> custom software since 2002.</h1>
-                                </Fade>
-                                <Fade timeout={1000}>
-                                    <button onClick={this.incrementStep} className="button" id="showButton">Show me More</button>
-                                </Fade>
-                            </div>
+                            <h1 className="header-text">Softcad Solutions <br /> Designing ships and <br /> custom software since 2002.</h1>
+                            <button onClick={this.incrementStep} className="button" id="showButton">Show me More</button>
                         </header>
                     </React.Fragment>
                 )
