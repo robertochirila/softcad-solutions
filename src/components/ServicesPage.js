@@ -48,7 +48,7 @@ export class ServicesPage extends Component {
                         <Fade timeout={1500}>
                             <div>
 
-                                <img src="../img/scs_navalProject3.png" className="image-naval" alt="servicePageImage2"></img>
+                                <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_navalProject3.png" className="image-naval" alt="servicePageImage2"></img>
 
                             </div>
 
