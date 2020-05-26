@@ -1,7 +1,9 @@
-/*html, body {
+body, html {
   background-color: #f4f1ee;
   color: #ffffff;
   font-family: 'Lato', sans-serif;
+  font-size: 30px;
+  min-height: 100%;
 }
 
 /* FOOTER NAV */

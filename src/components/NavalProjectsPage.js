@@ -18,61 +18,36 @@ export class NavalProjectsPage extends Component {
     }
     render() {
         return (
-            <div className="section-naval">
-
-                {isTablet ?
-                    <div className="overlay">
-                    </div>
-                    :
-                    <div className="overlay">
-                        <img className="header-image-naval" src='../img/scs_headerShip2.jpg' alt="landingPageImage"></img>
-                    </div>
-                }
-
-                <div className="services-box">
-                    <div className="services-box-left">
-                        <Fade timeout={500}>
+            <section className="section-naval-projects">
+                <div className="section-naval">
+                    <div className="box">
+                        <h2 className="header-projects">EasyShipDesign projects</h2>
+                        <p className="services-paragraph">ESD screenshots and pictures during ship building stages</p>
+                        <Carousel showThumbs={false} className="carousel">
                             <div>
-                                <h2 className={isTablet ? "header-naval black" : "header-naval"}>EasyShipDesign projects</h2>
-                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>ESD screenshots and pictures during ship building stages</p>
+                                <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval1.png" alt="navalPageImage1"></img>
                             </div>
-                        </Fade>
-                        <Fade timeout={1000}>
-                            <div style={{ padding: "2%" }}>
-                                <Carousel showThumbs={false}>
-                                    <div>
-                                        <img className="image-naval-collection" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval1.png" alt="navalPageImage1"></img>
-                                    </div>
-                                    <div>
-                                        <img className="image-naval-collection" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval2.png" alt="navalPageImage2"></img>
-                                    </div>
-                                </Carousel>
-                            </div>
-                        </Fade>
-                    </div>
-                    <div className="services-box-right" id="servicesBoxRightMobile">
-                        <Fade timeout={500}>
                             <div>
-                                <h2 className={isTablet ? "header-naval black" : "header-naval"} id="headerNaval">Ships and more...</h2>
-                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"} id="servicesParagraph">We can create ship 3D model but also any kind of steel structure</p>
+                                <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval2.png" alt="navalPageImage2"></img>
                             </div>
-                        </Fade>
-                        <Fade timeout={1000}>
-                            <div style={{ padding: "2%" }}>
-                                <Carousel showThumbs={false}>
-                                    <div>
-                                        <img className="image-naval-collection" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval3.png" alt="navalPageImage3"></img>
-                                    </div>
-                                    <div>
-                                        <img className="image-naval-collection" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval4.png" alt="navalPageImage4"></img>
-                                    </div>
-                                </Carousel>
-                            </div>
-                        </Fade>
-
+                        </Carousel>
+                    </div>
+                    <div className="section-software">
+                        <div className="box">
+                            <h2 className="header-projects" id="headerNaval">Ships and more...</h2>
+                            <p className="services-paragraph" id="servicesParagraph">We can create ship 3D model but also any kind of steel structure</p>
+                            <Carousel showThumbs={false} className="carousel">
+                                <div>
+                                    <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval3.png" alt="navalPageImage3"></img>
+                                </div>
+                                <div>
+                                    <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval4.png" alt="navalPageImage4"></img>
+                                </div>
+                            </Carousel>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         )
     }
 }

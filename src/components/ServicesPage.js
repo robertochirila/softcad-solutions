@@ -27,53 +27,21 @@ export class ServicesPage extends Component {
         const displayNone = { display: "none" }
         return (
             <div className="section-services">
-                <Fade timeout={500}>
-                    {isTablet ?
-                        <div className="overlay">
-                        </div>
-                        :
-                        <div className="overlay">
-                            <img className="header-image-naval" src='https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_headerShip2.jpg' alt="landingPageImage"></img>
-                        </div>
-                    }
-                </Fade>
-                <div className="services-box">
-                    <div className="services-box-left">
-                        <Fade timeout={1000}>
-                            <div>
-                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>We already have the tools and expertise and we can create detailed 3D ship model database, drawings and complete shipbuilding production information</p>
-                                <button onClick={this.moveNext} className={isTablet ? "button blackButton" : "button"} name="naval">Naval Projects</button>
-                            </div>
-                        </Fade>
-                        <Fade timeout={1500}>
-                            <div>
-
-                                <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_navalProject3.png" className="image-naval" alt="servicePageImage2"></img>
-
-                            </div>
-
-
-                        </Fade>
+                <div className="section-naval">
+                    <div className="box">
+                        <p className="services-paragraph">We already have the tools and expertise and we can create detailed 3D ship model database, drawings and complete shipbuilding production information</p>
+                        <button onClick={this.moveNext} className="button" id="navalProjectButton" name="naval">Naval Projects</button>
+                        <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_navalProject3.png" className="services-image" alt="servicePageImage2"></img>
                     </div>
-                    <div className="services-box-right">
-                        <Fade timeout={1000}>
-                            <div>
-                                <p className={isTablet ? "services-paragraph black" : "services-paragraph"}>Our main goal is to create new software applications for ship design, 3D modelling and CAD/CAM production information</p>
-                                <button onClick={this.moveNext2Steps} className={isTablet ? "button blackButton" : "button"} name="software">Software Projects</button>
-                            </div>
-                        </Fade>
-                        <Fade timeout={1500}>
-                            <div style={isMobile ? displayNone : display}>
-
-                                <img className="image-software" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/programmingIcon2.png" alt="servicePageImage3"></img>
-
-                            </div>
-
-                        </Fade>
+                </div>
+                <div className="section-software">
+                    <div className="box">
+                        <p className="services-paragraph">Our main goal is to create new software applications for ship design, 3D modelling and CAD/CAM production information</p>
+                        <button onClick={this.moveNext2Steps} className="button" id="softwareProjectButton" name="software">Software Projects</button>
+                        <img className="services-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/programmingIcon2.png" alt="servicePageImage3"></img>
                     </div>
                 </div>
             </div>
-
         )
     }
 }

@@ -35,19 +35,19 @@ export class LandingPage extends Component {
         switch (step) {
             case 1:
                 return (
-                    <React.Fragment>
-                        <header>
+                    <header>
+                        <div className="header-box">
                             <h1 className="header-text">Softcad Solutions <br /> Designing ships and <br /> custom software since 2002.</h1>
                             <button onClick={this.incrementStep} className="button" id="showButton">Show me More</button>
-                        </header>
-                    </React.Fragment>
+                        </div>
+                    </header>
                 )
                 break;
             case 2:
                 return (
                     <React.Fragment>
                         <ServicesPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
-                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} step={step} />
+                        {/*<FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} step={step} />*/}
                     </React.Fragment>
                 )
                 break;
@@ -55,7 +55,7 @@ export class LandingPage extends Component {
                 return (
                     <React.Fragment>
                         <NavalProjectsPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
-                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} step={step} />
+                        {/*<FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} step={step} />*/}
                     </React.Fragment>
                 )
                 break
@@ -63,7 +63,7 @@ export class LandingPage extends Component {
                 return (
                     <React.Fragment>
                         <SoftwareProjectsPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
-                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} step={step} />
+                        {/*<FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} step={step} />*/}
                     </React.Fragment>
                 )
                 break;
@@ -71,7 +71,7 @@ export class LandingPage extends Component {
                 return (
                     <React.Fragment>
                         <PartnersPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
-                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} step={step} />
+                        {/*<FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} step={step} />*/}
                     </React.Fragment>
                 )
                 break
@@ -79,7 +79,7 @@ export class LandingPage extends Component {
                 return (
                     <React.Fragment>
                         <LocationPage decrementStep={this.decrementStep} />
-                        <FooterNav decrementStep={this.decrementStep} step={step} />
+                        {/*<FooterNav decrementStep={this.decrementStep} step={step} />*/}
                     </React.Fragment>
                 )
             default:
