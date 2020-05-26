@@ -38,13 +38,22 @@
     width: 70%;
 }
 
+.navbar-custom {
+    padding: 0.1rem 0.2rem !important;
+}
+
+.navbar-toggler-custom {
+    font-size: 0.8rem;
+}
+
 @media only screen and (max-width: 600px) {
     .button {
-        padding: 6px 8px;
+        padding: 8px 14px;
         font-size: 0.6rem;
+        border-color: #fff;
     }
     .box {
-        padding: 5% 3% 5% 3%;
+        padding: 20% 3% 10% 3%;
         width: 94%;
         text-align: center;
     }
@@ -82,5 +91,23 @@
     }
     .header-text-pages {
         font-size: 0.8rem;
+    }
+}
+
+@media only screen and (min-height: 850px) {
+    .button {
+        font-size: 0.6rem;
+    }
+    .services-paragraph {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (min-width: 770px) {
+    .button {
+        font-size: 0.6rem;
+    }
+    .services-paragraph {
+        font-size: 1rem;
     }
 }

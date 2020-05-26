@@ -19,13 +19,18 @@
 }
 
 .partners-paragraph {
-    color: #000000;
+    color: #ffffff;
 }
 
 @media only screen and (max-width: 600px) {
+    .section-partners {
+        background: rgb(0, 42, 108);
+        background: linear-gradient(0deg, rgba(0, 42, 108, 1) 16%, rgba(4, 148, 249, 1) 100%);
+    }
     .partners-paragraph {
-        color: #000000;
-        margin: 10% 5%;
+        color: #ffffff;
+        font-weight: lighter;
+        margin: 5%;
     }
     .partners-logo {
         width: 100%;

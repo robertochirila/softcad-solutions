@@ -50,12 +50,18 @@ export class LandingPage extends Component {
         switch (step) {
             case 1:
                 return (
-                    <header>
-                        <div className="header-box">
-                            <h1 className="header-text">Softcad Solutions <br /> Designing ships and <br /> custom software since 2002.</h1>
-                            <button onClick={this.handleServicesNavigation} className="button" id="showButton">Show me More</button>
-                        </div>
-                    </header>
+                    <Fade timeout={250}>
+                        <header>
+                            <div className="header-box">
+                                <Fade timeout={500}>
+                                    <h1 className="header-text">Softcad Solutions <br /> Designing ships and <br /> custom software since 2002.</h1>
+                                </Fade>
+                                <Fade timeout={750}>
+                                    <button onClick={this.handleServicesNavigation} className="button" id="showButton">Show me More</button>
+                                </Fade>
+                            </div>
+                        </header>
+                    </Fade>
                 )
                 break;
             case 2:

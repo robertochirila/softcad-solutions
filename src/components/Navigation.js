@@ -11,6 +11,7 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
+    Fade,
 } from 'reactstrap';
 
 const Navigation = (props) => {
@@ -44,43 +45,45 @@ const Navigation = (props) => {
     }
 
     return (
-        <div className="navbar-wrapper">
-            <Navbar color="light" light expand="md" className="navbar-custom">
-                <NavbarBrand style={{ fontSize: "0.6rem" }}>Softcad Solutions</NavbarBrand>
-                <NavbarToggler onClick={toggle} className="navbar-toggler-custom" />
-                <Collapse isOpen={isOpen} navbar>
-                    <Nav className="mr-auto" navbar>
-                        <NavItem>
-                            <NavLink onClick={navigateHome}>Home</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink onClick={navigateServices}>Services</NavLink>
-                        </NavItem>
-                        <UncontrolledDropdown nav inNavbar>
-                            <DropdownToggle nav caret>
-                                Projects
+        <Fade timeout={500}>
+            <div className="navbar-wrapper">
+                <Navbar color="light" light expand="md" className="navbar-custom">
+                    <NavbarBrand style={{ fontSize: "0.6rem" }}>Softcad Solutions</NavbarBrand>
+                    <NavbarToggler onClick={toggle} className="navbar-toggler-custom" />
+                    <Collapse isOpen={isOpen} navbar>
+                        <Nav className="mr-auto" navbar>
+                            <NavItem>
+                                <NavLink href="#" onClick={navigateHome}>Home</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="#" onClick={navigateServices}>Services</NavLink>
+                            </NavItem>
+                            <UncontrolledDropdown nav inNavbar>
+                                <DropdownToggle nav caret>
+                                    Projects
               </DropdownToggle>
-                            <DropdownMenu right>
-                                <DropdownItem onClick={navigateNavalProjects}>
-                                    Naval
+                                <DropdownMenu right>
+                                    <DropdownItem href="#" onClick={navigateNavalProjects}>
+                                        Naval
                 </DropdownItem>
-                                <DropdownItem onClick={navigateSoftwareProjects}>
-                                    Software
+                                    <DropdownItem href="#" onClick={navigateSoftwareProjects}>
+                                        Software
                 </DropdownItem>
-                                <DropdownItem divider />
+                                    <DropdownItem divider />
 
-                            </DropdownMenu>
-                        </UncontrolledDropdown>
-                        <NavItem>
-                            <NavLink onClick={navigatePartners}>Partners</NavLink>
-                        </NavItem>
-                        <NavItem>
-                            <NavLink onClick={navigateLocation}>Location</NavLink>
-                        </NavItem>
-                    </Nav>
-                </Collapse>
-            </Navbar>
-        </div>
+                                </DropdownMenu>
+                            </UncontrolledDropdown>
+                            <NavItem>
+                                <NavLink href="#" onClick={navigatePartners}>Partners</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="#" onClick={navigateLocation}>Location</NavLink>
+                            </NavItem>
+                        </Nav>
+                    </Collapse>
+                </Navbar>
+            </div>
+        </Fade>
     );
 }
 
