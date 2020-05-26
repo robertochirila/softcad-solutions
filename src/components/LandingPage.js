@@ -7,7 +7,7 @@ import { SoftwareProjectsPage } from './SoftwareProjectsPage'
 import { ServicesPage } from './ServicesPage'
 import LocationPage from './LocationPage';
 import { Fade } from 'reactstrap';
-import { FooterNav } from './FooterNav'
+import Navigation from './Navigation'
 
 
 
@@ -36,6 +36,7 @@ export class LandingPage extends Component {
             case 1:
                 return (
                     <header>
+                        <Navigation />
                         <div className="header-box">
                             <h1 className="header-text">Softcad Solutions <br /> Designing ships and <br /> custom software since 2002.</h1>
                             <button onClick={this.incrementStep} className="button" id="showButton">Show me More</button>

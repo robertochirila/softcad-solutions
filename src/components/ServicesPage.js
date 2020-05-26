@@ -34,7 +34,7 @@ export class ServicesPage extends Component {
                         <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_navalProject3.png" className="services-image" alt="servicePageImage2"></img>
                     </div>
                 </div>
-                <div className="section-software">
+                <div className="section-software-page">
                     <div className="box">
                         <p className="services-paragraph">Our main goal is to create new software applications for ship design, 3D modelling and CAD/CAM production information</p>
                         <button onClick={this.moveNext2Steps} className="button" id="softwareProjectButton" name="software">Software Projects</button>

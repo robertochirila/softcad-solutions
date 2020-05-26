@@ -4,9 +4,10 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.css';
 import './App.css';
 import './styles/LandingPage.css'
-import './styles/Buttons.css'
+import './styles/Common.css'
 import './styles/ServicesPage.css'
 import './styles/NavalProjects.css'
+import './styles/SoftwareProjects.css'
 
 
 

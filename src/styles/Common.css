@@ -1,0 +1,30 @@
+@media only screen and (max-width: 600px) {
+    .button {
+        text-transform: uppercase;
+        padding: 6px 8px;
+    }
+    .box {
+        padding: 5% 2% 5% 2%;
+        width: 96%;
+        text-align: center;
+    }
+    #navalProjectButton {
+        margin: 5% 0;
+    }
+    #softwareProjectButton {
+        margin: 5% 0;
+    }
+    .carousel {
+        padding: 5% 0;
+    }
+    .carousel-image {
+        width: 100%;
+        height: auto;
+    }
+    .services-paragraph {
+        font-size: 1rem;
+    }
+    .header-projects {
+        font-size: 1.2rem;
+    }
+}

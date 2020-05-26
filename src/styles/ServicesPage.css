@@ -7,9 +7,6 @@
 }
 
 @media only screen and (max-width: 600px) {
-    .services-paragraph {
-        font-size: 1rem;
-    }
     .section-naval {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url('https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_headerShip2.jpg');
         background-size: cover;
@@ -17,22 +14,11 @@
         background-attachment: fixed;
         height: 100vh;
     }
-    .section-software {
-        background-color: rgb(94, 73, 143);
-    }
-    .box {
-        padding: 5% 2% 5% 2%;
-        width: 96%;
-        text-align: center;
+    .section-software-page {
+        background-color: rgb(30, 76, 118)
     }
     .services-image {
         width: 100%;
         height: auto;
-    }
-    #navalProjectButton {
-        margin: 5% 0;
-    }
-    #softwareProjectButton {
-        margin: 5% 0;
     }
 }
