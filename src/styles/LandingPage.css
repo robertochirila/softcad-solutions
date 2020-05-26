@@ -20,10 +20,30 @@ header {
 
 @media only screen and (max-width: 600px) {
     .header-box {
-        top: 45%;
+        top: 60%;
         width: 80%;
     }
     .header-text {
-        font-size: 1.2rem
+        font-size: 1rem
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .header-box {
+        top: 60%;
+        width: 90%;
+    }
+    .header-text {
+        font-size: 0.8;
+    }
+}
+
+@media only screen and (max-height: 600px) {
+    .header-box {
+        top: 40%;
+        width: 90%;
+    }
+    .header-text {
+        font-size: 0.8;
     }
 }

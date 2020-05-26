@@ -18,3 +18,5 @@
         background-color: rgb(30, 76, 118)
     }
 }
+
+@media only screen and (max-height: 700px) {}

@@ -14,8 +14,6 @@ import {
 } from 'reactstrap';
 
 const Navigation = (props) => {
-    console.log(props)
-
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
@@ -46,10 +44,10 @@ const Navigation = (props) => {
     }
 
     return (
-        <div>
-            <Navbar color="light" light expand="md">
-                <NavbarBrand href="/">reactstrap</NavbarBrand>
-                <NavbarToggler onClick={toggle} />
+        <div className="navbar-wrapper">
+            <Navbar color="light" light expand="md" className="navbar-custom">
+                <NavbarBrand style={{ fontSize: "0.6rem" }}>Softcad Solutions</NavbarBrand>
+                <NavbarToggler onClick={toggle} className="navbar-toggler-custom" />
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>

@@ -2,10 +2,11 @@
     .button {
         text-transform: uppercase;
         padding: 6px 8px;
+        font-size: 0.6rem;
     }
     .box {
-        padding: 5% 2% 5% 2%;
-        width: 96%;
+        padding: 5% 3% 5% 3%;
+        width: 94%;
         text-align: center;
     }
     #navalProjectButton {
@@ -22,9 +23,25 @@
         height: auto;
     }
     .services-paragraph {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .header-text-pages {
-        font-size: 1.2rem;
+        font-size: 1rem;
+    }
+    .navbar-custom {
+        height: 50%;
+        padding: 0.2rem 0.5rem !important;
+    }
+    .navbar-toggler-custom {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-height: 700px) {
+    .services-paragraph {
+        font-size: 0.7rem;
+    }
+    .header-text-pages {
+        font-size: 0.8rem;
     }
 }
