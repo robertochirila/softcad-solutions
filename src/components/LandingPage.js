@@ -69,7 +69,10 @@ export class LandingPage extends Component {
                             handlePartnersNavigation={this.handlePartnersNavigation}
                             handleLocationNavigation={this.handleLocationNavigation}
                         />
-                        <ServicesPage />
+                        <ServicesPage
+                            handleNavalProjectsNavigation={this.handleNavalProjectsNavigation}
+                            handleSoftwareProjectsNavigation={this.handleSoftwareProjectsNavigation}
+                        />
 
                     </React.Fragment>
                 )

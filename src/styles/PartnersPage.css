@@ -1,3 +1,27 @@
+.col-3 {
+    width: 33.3%;
+    float: left;
+    text-align: center;
+}
+
+.row {
+    width: 100%;
+    overflow: hidden;
+}
+
+.partners-logo {
+    height: auto;
+    display: block;
+}
+
+#partnersHeader {
+    color: #000000;
+}
+
+.partners-paragraph {
+    color: #000000;
+}
+
 @media only screen and (max-width: 600px) {
     .partners-paragraph {
         color: #000000;

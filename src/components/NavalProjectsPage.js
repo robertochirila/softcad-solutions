@@ -32,19 +32,19 @@ export class NavalProjectsPage extends Component {
                             </div>
                         </Carousel>
                     </div>
-                    <div className="section-naval-more">
-                        <div className="box">
-                            <h2 className="header-text-pages" id="headerNaval">Ships and more...</h2>
-                            <p className="services-paragraph" id="servicesParagraph">We can create ship 3D model but also any kind of steel structure</p>
-                            <Carousel showThumbs={false} className="carousel">
-                                <div>
-                                    <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval3.png" alt="navalPageImage3"></img>
-                                </div>
-                                <div>
-                                    <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval4.png" alt="navalPageImage4"></img>
-                                </div>
-                            </Carousel>
-                        </div>
+                </div>
+                <div className="section-naval-more">
+                    <div className="box">
+                        <h2 className="header-text-pages" id="headerNaval">Ships and more...</h2>
+                        <p className="services-paragraph" id="servicesParagraph">We can create ship 3D model but also any kind of steel structure</p>
+                        <Carousel showThumbs={false} className="carousel">
+                            <div>
+                                <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval3.png" alt="navalPageImage3"></img>
+                            </div>
+                            <div>
+                                <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval4.png" alt="navalPageImage4"></img>
+                            </div>
+                        </Carousel>
                     </div>
                 </div>
             </section>

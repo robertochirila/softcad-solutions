@@ -1,7 +1,11 @@
+.section-location {
+    background-color: rgb(15, 38, 59);
+}
+
 @media only screen and (max-width: 600px) {
     .section-location {
         background-color: rgb(15, 38, 59);
-        height: 100vh;
+        height: auto;
         /*background: rgb(2, 0, 36);
         background: linear-gradient(126deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 11%, rgba(34, 98, 185, 0.6362920168067228) 100%);
         background-size: cover;
@@ -18,4 +22,8 @@
     }
 }
 
-@media only screen and (max-height: 700px) {}
+@media only screen and (max-height: 700px) {
+    .section-location {
+        height: 120vh;
+    }
+}
