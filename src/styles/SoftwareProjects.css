@@ -1,0 +1,20 @@
+.section-software-projects {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url('https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_headerShip2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+@media only screen and (max-width: 600px) {
+    .section-software {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url('https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_headerShip2.jpg');
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+    .section-software-more {
+        background-color: rgb(30, 76, 118)
+    }
+}

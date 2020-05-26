@@ -7,7 +7,7 @@ import { SoftwareProjectsPage } from './SoftwareProjectsPage'
 import { ServicesPage } from './ServicesPage'
 import LocationPage from './LocationPage';
 import { Fade } from 'reactstrap';
-import { FooterNav } from './FooterNav'
+import Navigation from './Navigation'
 
 
 
@@ -19,15 +19,30 @@ export class LandingPage extends Component {
         }
     }
 
-    incrementStep = () => {
-        const { step } = this.state
-        this.setState({ step: step + 1 })
+    handleHomeNavigation = () => {
+        this.setState({ step: 1 })
     }
 
-    decrementStep = () => {
-        const { step } = this.state
-        this.setState({ step: step - 1 })
+    handleServicesNavigation = () => {
+        this.setState({ step: 2 })
     }
+
+    handleNavalProjectsNavigation = () => {
+        this.setState({ step: 3 })
+    }
+
+    handleSoftwareProjectsNavigation = () => {
+        this.setState({ step: 4 })
+    }
+
+    handlePartnersNavigation = () => {
+        this.setState({ step: 5 })
+    }
+    handleLocationNavigation = () => {
+        this.setState({ step: 6 })
+    }
+
+
 
 
     render() {
@@ -35,63 +50,90 @@ export class LandingPage extends Component {
         switch (step) {
             case 1:
                 return (
-                    <React.Fragment>
-                        <header>
-                            {<Fade timeout={500}>
-                                <div className="overlay">
-                                    <img className="header-image-hero" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_headerShip.jpg" alt="landingPageImage"></img>
-                                </div>
-                            </Fade>}
-                            <div className="header-text-box">
-
-                                <Fade timeout={750}>
-                                    <h1 className="header-text">Softcad Solutions <br /> Designing ships and <br /> custom software since 2002.</h1>
-                                </Fade>
-                                <Fade timeout={1000}>
-                                    <button onClick={this.incrementStep} className="button" id="showButton">Show me More</button>
-                                </Fade>
-                            </div>
-                        </header>
-                    </React.Fragment>
+                    <header>
+                        <div className="header-box">
+                            <h1 className="header-text">Softcad Solutions <br /> Designing ships and <br /> custom software since 2002.</h1>
+                            <button onClick={this.handleServicesNavigation} className="button" id="showButton">Show me More</button>
+                        </div>
+                    </header>
                 )
                 break;
             case 2:
                 return (
                     <React.Fragment>
-                        <ServicesPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
-                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} step={step} />
+                        <Navigation
+                            handleHomeNavigation={this.handleHomeNavigation}
+                            handleServicesNavigation={this.handleServicesNavigation}
+                            handleNavalProjectsNavigation={this.handleNavalProjectsNavigation}
+                            handleSoftwareProjectsNavigation={this.handleSoftwareProjectsNavigation}
+                            handlePartnersNavigation={this.handlePartnersNavigation}
+                            handleLocationNavigation={this.handleLocationNavigation}
+                        />
+                        <ServicesPage />
+
                     </React.Fragment>
                 )
                 break;
             case 3:
                 return (
                     <React.Fragment>
-                        <NavalProjectsPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
-                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} step={step} />
+                        <Navigation
+                            handleHomeNavigation={this.handleHomeNavigation}
+                            handleServicesNavigation={this.handleServicesNavigation}
+                            handleNavalProjectsNavigation={this.handleNavalProjectsNavigation}
+                            handleSoftwareProjectsNavigation={this.handleSoftwareProjectsNavigation}
+                            handlePartnersNavigation={this.handlePartnersNavigation}
+                            handleLocationNavigation={this.handleLocationNavigation}
+                        />
+                        <NavalProjectsPage />
+
                     </React.Fragment>
                 )
                 break
             case 4:
                 return (
                     <React.Fragment>
-                        <SoftwareProjectsPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
-                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} step={step} />
+                        <Navigation
+                            handleHomeNavigation={this.handleHomeNavigation}
+                            handleServicesNavigation={this.handleServicesNavigation}
+                            handleNavalProjectsNavigation={this.handleNavalProjectsNavigation}
+                            handleSoftwareProjectsNavigation={this.handleSoftwareProjectsNavigation}
+                            handlePartnersNavigation={this.handlePartnersNavigation}
+                            handleLocationNavigation={this.handleLocationNavigation}
+                        />
+                        <SoftwareProjectsPage />
+
                     </React.Fragment>
                 )
                 break;
             case 5:
                 return (
                     <React.Fragment>
-                        <PartnersPage incrementStep={this.incrementStep} decrementStep={this.decrementStep} />
-                        <FooterNav incrementStep={this.incrementStep} decrementStep={this.decrementStep} step={step} />
+                        <Navigation
+                            handleHomeNavigation={this.handleHomeNavigation}
+                            handleServicesNavigation={this.handleServicesNavigation}
+                            handleNavalProjectsNavigation={this.handleNavalProjectsNavigation}
+                            handleSoftwareProjectsNavigation={this.handleSoftwareProjectsNavigation}
+                            handlePartnersNavigation={this.handlePartnersNavigation}
+                            handleLocationNavigation={this.handleLocationNavigation}
+                        />
+                        <PartnersPage />
+
                     </React.Fragment>
                 )
                 break
             case 6:
                 return (
                     <React.Fragment>
-                        <LocationPage decrementStep={this.decrementStep} />
-                        <FooterNav decrementStep={this.decrementStep} step={step} />
+                        <Navigation
+                            handleHomeNavigation={this.handleHomeNavigation}
+                            handleServicesNavigation={this.handleServicesNavigation}
+                            handleNavalProjectsNavigation={this.handleNavalProjectsNavigation}
+                            handleSoftwareProjectsNavigation={this.handleSoftwareProjectsNavigation}
+                            handlePartnersNavigation={this.handlePartnersNavigation}
+                            handleLocationNavigation={this.handleLocationNavigation}
+                        />
+                        <LocationPage />
                     </React.Fragment>
                 )
             default:
