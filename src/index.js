@@ -8,7 +8,8 @@ import './styles/Common.css'
 import './styles/ServicesPage.css'
 import './styles/NavalProjects.css'
 import './styles/SoftwareProjects.css'
-import './styles/Partners.css'
+import './styles/PartnersPage.css'
+import './styles/LocationPage.css'
 
 
 

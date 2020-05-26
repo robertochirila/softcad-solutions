@@ -17,7 +17,7 @@ export class SoftwareProjectsPage extends Component {
             <section className="section-software-projects">
                 <div className="section-software">
                     <div className="box">
-                        <h2 className="header-projects">Ship design software applications and more</h2>
+                        <h2 className="header-text-pages">Ship design software applications and more</h2>
                         <p className="services-paragraph">Easy Ship Design : ship design system</p>
                         <p className="services-paragraph">Autonesting : plates and profiles parts automatic nesting system</p>
                         <p className="services-paragraph">ShellPlates : ship 3D surfaces modeller, seams and butts arrangement, surface expansion 2D parts</p>
@@ -49,7 +49,7 @@ export class SoftwareProjectsPage extends Component {
                                 null
                             }
 
-                            <h2 className="header-projects">Custom software applications, a few examples</h2>
+                            <h2 className="header-text-pages">Custom software applications, a few examples</h2>
                             <p className="services-paragraph">SERPO : shipyard ERP system, mySQL database server</p>
                             <p className="services-paragraph">SICA : house roof surface calculation</p>
                             <p className="services-paragraph"> SORT : automatically loading and routing of truck fleet</p>

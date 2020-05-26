@@ -21,7 +21,7 @@ export class NavalProjectsPage extends Component {
             <section className="section-projects">
                 <div className="section-naval">
                     <div className="box">
-                        <h2 className="header-projects">EasyShipDesign projects</h2>
+                        <h2 className="header-text-pages">EasyShipDesign projects</h2>
                         <p className="services-paragraph">ESD screenshots and pictures during ship building stages</p>
                         <Carousel showThumbs={false} className="carousel">
                             <div>
@@ -34,7 +34,7 @@ export class NavalProjectsPage extends Component {
                     </div>
                     <div className="section-naval-more">
                         <div className="box">
-                            <h2 className="header-projects" id="headerNaval">Ships and more...</h2>
+                            <h2 className="header-text-pages" id="headerNaval">Ships and more...</h2>
                             <p className="services-paragraph" id="servicesParagraph">We can create ship 3D model but also any kind of steel structure</p>
                             <Carousel showThumbs={false} className="carousel">
                                 <div>

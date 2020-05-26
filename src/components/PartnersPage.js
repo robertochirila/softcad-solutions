@@ -6,7 +6,7 @@ export class PartnersPage extends Component {
     render() {
         return (
             <section className="section-partners">
-                <h2 className="header-partners">Our Partners</h2>
+                <h2 className="header-text-pages">Our Partners</h2>
                 {isMobile ?
                     <div className="box" id="partnersBox">
                         <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners1.png" className="partners-logo" alt="partnersPageImage1"></img>
