@@ -1,0 +1,13 @@
+@media only screen and (max-width: 600px) {
+    .partners-paragraph {
+        color: #000000;
+        margin: 10% 5%;
+    }
+    .partners-logo {
+        width: 100%;
+        height: auto;
+    }
+    #partnersBox {
+        text-align: center;
+    }
+}

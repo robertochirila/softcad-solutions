@@ -11,13 +11,39 @@ import {
     DropdownToggle,
     DropdownMenu,
     DropdownItem,
-    NavbarText
 } from 'reactstrap';
 
 const Navigation = (props) => {
+    console.log(props)
+
     const [isOpen, setIsOpen] = useState(false);
 
     const toggle = () => setIsOpen(!isOpen);
+
+    const navigateHome = () => {
+        props.handleHomeNavigation()
+        toggle()
+    }
+    const navigateServices = () => {
+        props.handleServicesNavigation()
+        toggle()
+    }
+    const navigateNavalProjects = () => {
+        props.handleNavalProjectsNavigation()
+        toggle()
+    }
+    const navigateSoftwareProjects = () => {
+        props.handleSoftwareProjectsNavigation()
+        toggle()
+    }
+    const navigatePartners = () => {
+        props.handlePartnersNavigation()
+        toggle()
+    }
+    const navigateLocation = () => {
+        props.handleLocationNavigation()
+        toggle()
+    }
 
     return (
         <div>
@@ -27,30 +53,33 @@ const Navigation = (props) => {
                 <Collapse isOpen={isOpen} navbar>
                     <Nav className="mr-auto" navbar>
                         <NavItem>
-                            <NavLink href="/components/">Components</NavLink>
+                            <NavLink onClick={navigateHome}>Home</NavLink>
                         </NavItem>
                         <NavItem>
-                            <NavLink href="https://github.com/reactstrap/reactstrap">GitHub</NavLink>
+                            <NavLink onClick={navigateServices}>Services</NavLink>
                         </NavItem>
                         <UncontrolledDropdown nav inNavbar>
                             <DropdownToggle nav caret>
-                                Options
+                                Projects
               </DropdownToggle>
                             <DropdownMenu right>
-                                <DropdownItem>
-                                    Option 1
+                                <DropdownItem onClick={navigateNavalProjects}>
+                                    Naval
                 </DropdownItem>
-                                <DropdownItem>
-                                    Option 2
+                                <DropdownItem onClick={navigateSoftwareProjects}>
+                                    Software
                 </DropdownItem>
                                 <DropdownItem divider />
-                                <DropdownItem>
-                                    Reset
-                </DropdownItem>
+
                             </DropdownMenu>
                         </UncontrolledDropdown>
+                        <NavItem>
+                            <NavLink onClick={navigatePartners}>Partners</NavLink>
+                        </NavItem>
+                        <NavItem>
+                            <NavLink onClick={navigateLocation}>Location</NavLink>
+                        </NavItem>
                     </Nav>
-                    <NavbarText>Simple Text</NavbarText>
                 </Collapse>
             </Navbar>
         </div>
