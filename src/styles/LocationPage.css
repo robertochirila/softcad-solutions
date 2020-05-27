@@ -1,3 +1,25 @@
+/* PHONES */
+
+/* SMALL TABLETS */
+
+@media screen and (min-width: 600px) {
+    .services-paragraph {
+        font-size: 1rem;
+    }
+}
+
+/* LARGE TABLETS AND LAPTOPS */
+
+@media screen and (min-width: 900px) {
+    .services-paragraph {
+        font-size: 1rem;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px) {}
+
 .section-location {
     background-color: rgb(15, 38, 59);
 }

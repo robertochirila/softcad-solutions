@@ -1,44 +1,66 @@
-.col-3 {
-    width: 33.3%;
-    float: left;
+/* PHONES */
+
+.section-partners {
+    background: rgb(0, 42, 108);
+    background: linear-gradient(0deg, rgba(0, 42, 108, 1) 16%, rgba(4, 148, 249, 1) 100%);
+}
+
+.partners-paragraph {
+    color: #ffffff;
+    font-weight: lighter;
+    margin: 5%;
+}
+
+.partners-logo {
+    width: 100%;
+    height: auto;
+}
+
+#partnersBox {
     text-align: center;
 }
 
 .row {
     width: 100%;
-    overflow: hidden;
 }
 
-.partners-logo {
-    height: auto;
-    display: block;
+.col-3 {
+    width: 33.3%;
 }
 
-#partnersHeader {
-    color: #000000;
-}
+/* SMALL TABLETS */
 
-.partners-paragraph {
-    color: #ffffff;
-}
+@media screen and (min-width: 600px) {}
 
-@media only screen and (max-width: 600px) {
-    .section-partners {
-        background: rgb(0, 42, 108);
-        background: linear-gradient(0deg, rgba(0, 42, 108, 1) 16%, rgba(4, 148, 249, 1) 100%);
+/* LARGE TABLETS AND LAPTOPS */
+
+@media screen and (min-width: 900px) {}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px) {
+    .col-3 {
+        width: 33.3%;
+        float: left;
+        text-align: center;
+    }
+    .row {
+        width: 100%;
+        overflow: hidden;
+    }
+    .partners-logo {
+        height: auto;
+        display: block;
+    }
+    #partnersHeader {
+        color: #000000;
+        text-align: left;
     }
     .partners-paragraph {
         color: #ffffff;
-        font-weight: lighter;
-        margin: 5%;
-    }
-    .partners-logo {
-        width: 100%;
-        height: auto;
-    }
-    #partnersBox {
-        text-align: center;
     }
 }
+
+@media only screen and (max-width: 600px) {}
 
 @media only screen and (max-height: 700px) {}

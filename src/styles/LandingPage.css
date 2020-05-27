@@ -1,3 +1,5 @@
+/* LARGE PHONES */
+
 header {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_headerShip.jpg");
     /* Center and scale the image nicely */
@@ -15,35 +17,91 @@ header {
 }
 
 .header-text {
-    font-size: 2rem;
+    font-size: 0.8rem;
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (min-width: 350px) {
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_headerShip.jpg");
+        /* Center and scale the image nicely */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+    }
     .header-box {
+        position: absolute;
         top: 60%;
-        width: 80%;
+        left: 5%;
+        text-transform: uppercase;
     }
     .header-text {
-        font-size: 1rem
+        font-size: 1rem;
     }
 }
 
-@media only screen and (max-height: 700px) {
+@media screen and (min-width: 650px) {
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_headerShip.jpg");
+        /* Center and scale the image nicely */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+    }
     .header-box {
+        position: absolute;
         top: 60%;
-        width: 90%;
+        left: 5%;
+        text-transform: uppercase;
     }
     .header-text {
-        font-size: 0.8;
+        font-size: 1rem;
     }
 }
 
-@media only screen and (max-height: 600px) {
+/* SMALL TABLETS */
+
+/* LARGE TABLETS AND LAPTOPS */
+
+@media screen and (min-width: 900px) {
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_headerShip.jpg");
+        /* Center and scale the image nicely */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+    }
     .header-box {
-        top: 40%;
-        width: 90%;
+        position: absolute;
+        top: 60%;
+        left: 5%;
+        text-transform: uppercase;
     }
     .header-text {
-        font-size: 0.8;
+        font-size: 1.6rem;
+    }
+}
+
+/* DESKTOP */
+
+@media screen and (min-width: 1200px) {
+    header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_headerShip.jpg");
+        /* Center and scale the image nicely */
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        height: 100vh;
+    }
+    .header-box {
+        position: absolute;
+        top: 60%;
+        left: 5%;
+        text-transform: uppercase;
+    }
+    .header-text {
+        font-size: 2rem;
     }
 }

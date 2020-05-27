@@ -1,3 +1,17 @@
+/* PHONES */
+
+/* SMALL TABLETS */
+
+/* LARGE TABLETS AND LAPTOPS */
+
+/*  */
+
+@media screen and (min-width:600) {}
+
+@media screen and (min-width:900) {}
+
+@media screen and (min-width:1200) {}
+
 .button {
     background: transparent;
     color: #fff;
