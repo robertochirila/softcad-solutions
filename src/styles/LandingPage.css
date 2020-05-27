@@ -47,27 +47,3 @@ header {
         font-size: 0.8;
     }
 }
-
-@media only screen and (min-height: 850px) and (max-height: 1200px) {
-    .header-box {
-        top: 55% !important;
-        width: 90%;
-    }
-    .header-text {
-        font-size: 1.6rem !important;
-    }
-}
-
-@media only screen and (min-width: 770px) and (max-width: 1200px) {
-    .header-box {
-        top: 55% !important;
-        width: 90%;
-    }
-    .header-text {
-        font-size: 1.4rem !important;
-    }
-}
-
-@media only screen and (min-height: 1000px) {}
-
-@media only screen and (min-width: 1000px) {}

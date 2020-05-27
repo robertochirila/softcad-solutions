@@ -30,23 +30,3 @@
         height: 120vh;
     }
 }
-
-@media only screen and (min-height: 850px) {
-    .section-location {
-        height: 100vh;
-    }
-    .location-image {
-        width: 100%;
-        height: auto;
-    }
-}
-
-@media only screen and (min-width: 770px) {
-    .section-location {
-        height: 100vh;
-    }
-    .location-image {
-        width: 100%;
-        height: auto;
-    }
-}

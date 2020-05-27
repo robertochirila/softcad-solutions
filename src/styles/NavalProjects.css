@@ -34,21 +34,3 @@
         width: 100%
     }
 }
-
-@media only screen and (max-height: 700px) {}
-
-@media only screen and (min-height: 850px) {
-    .section-naval-more {
-        width: 100% !important;
-        background: rgb(0, 42, 108);
-        background: linear-gradient(0deg, rgba(0, 42, 108, 1) 16%, rgba(4, 148, 249, 1) 100%);
-    }
-}
-
-@media only screen and (min-width: 770px) {
-    .section-naval-more {
-        width: 100% !important;
-        background: rgb(0, 42, 108);
-        background: linear-gradient(0deg, rgba(0, 42, 108, 1) 16%, rgba(4, 148, 249, 1) 100%);
-    }
-}
