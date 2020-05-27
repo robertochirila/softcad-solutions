@@ -10,6 +10,8 @@
 
 .section-naval {
     width: 100%;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
 }
 
 .section-naval-more {
@@ -27,9 +29,13 @@
         background-position: center;
         background-attachment: fixed;
         height: 100vh;
+        -webkit-backface-visibility: visible;
+        backface-visibility: visible;
     }
     .section-naval {
         width: 100%;
+        -webkit-backface-visibility: visible;
+        backface-visibility: visible;
     }
     .section-naval-more {
         width: 100%;
@@ -50,6 +56,8 @@
     }
     .section-naval {
         width: 100%;
+        -webkit-backface-visibility: visible;
+        backface-visibility: visible;
     }
     .section-naval-more {
         width: 100%;

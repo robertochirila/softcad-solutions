@@ -41,7 +41,7 @@ export class SoftwareProjectsPage extends Component {
                 </div>
                 <div className="section-software-more">
                     <div className="box">
-                        {isMobile && isTablet ?
+                        {isMobile || isTablet ?
                             <Fade>
                                 <Carousel showThumbs={false}>
                                     <div>
