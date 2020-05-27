@@ -61,7 +61,7 @@ export class SoftwareProjectsPage extends Component {
                             <p className="services-paragraph">SERPO : shipyard ERP system, mySQL database server</p>
                             <p className="services-paragraph">SICA : house roof surface calculation</p>
                             <p className="services-paragraph"> SORT : automatically loading and routing of truck fleet</p>
-                            <p className="services-paragraph">AMOB : kitched 3D modeller and cutting plan</p>
+                            <p className="services-paragraph">AMOB : kitchen 3D modeller and cutting plan</p>
                         </Fade>
                         <Fade timeout={750}>
                             <Carousel showThumbs={false}>

@@ -13,16 +13,17 @@
 @media screen and (min-width:1200) {}
 
 .button {
-    background: transparent;
+    background: #000000;
     color: #fff;
     text-transform: uppercase;
     padding: 12px 16px;
-    transition: 0.3s background, 0.3s color ease-in-out;
+    transition: 0.4s background, 0.4s color, 0.4s border-color ease-in-out;
 }
 
 .button:hover {
     color: #000000;
     background: #fff;
+    border-color: #000000;
 }
 
 .button:focus {
@@ -41,6 +42,7 @@
 
 .services-paragraph {
     font-size: 1rem;
+    line-height: 2rem;
 }
 
 .services-image {
@@ -54,6 +56,15 @@
 
 .navbar-custom {
     padding: 0.1rem 0.2rem !important;
+    background-color: #fff !important;
+}
+
+.nav-link {
+    transition: 0.4s color ease-in-out !important;
+}
+
+.nav-link:hover {
+    color: #000000 !important;
 }
 
 .navbar-toggler-custom {
@@ -67,7 +78,7 @@
         border-color: #fff;
     }
     .box {
-        padding: 20% 3% 10% 3%;
+        padding: 20% 3% 2% 3%;
         width: 94%;
         text-align: center;
     }
@@ -85,7 +96,8 @@
         height: auto;
     }
     .services-paragraph {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
+        line-height: 1.8rem;
     }
     .header-text-pages {
         font-size: 1rem;

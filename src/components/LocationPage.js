@@ -7,12 +7,16 @@ export class LocationPage extends Component {
         return (
             <section className="section-location">
                 <div className="box">
-                    <h2 className="header-text-pages">Location</h2>
-                    <p className="services-paragraph">From 2004 our company has been located in Galati, Romania.</p>
-                    <p className="services-paragraph">Main office : Software Park Galati, 23 Strada Portului, Galati, 800025.</p>
-                    <p className="services-paragraph" style={{ fontStyle: "italic" }}>Email: softcadsolutions@yahoo.com</p>
-                    <p><a href="mailto:softcad.solutions@yahoo.com?Subject=Hello" target="_top"> Send Mail</a></p>
-                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_location.jpg" className="location-image" alt="locationPageImage1"></img>
+                    <Fade timeout={500}>
+                        <h2 className="header-text-pages">Location</h2>
+                        <p className="services-paragraph">From 2004 our company has been located in Galati, Romania.</p>
+                        <p className="services-paragraph">Main office : Software Park Galati, 23 Strada Portului, Galati, 800025.</p>
+                        <p className="services-paragraph" style={{ fontStyle: "italic" }}>Email: softcadsolutions@yahoo.com</p>
+                        <p><a href="mailto:softcad.solutions@yahoo.com?Subject=Hello" target="_top"> Send Mail</a></p>
+                    </Fade>
+                    <Fade timeout={1000}>
+                        <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_location.jpg" className="location-image" alt="locationPageImage1"></img>
+                    </Fade>
                 </div>
             </section>
         )

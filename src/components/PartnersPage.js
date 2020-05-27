@@ -9,70 +9,106 @@ export class PartnersPage extends Component {
                 {isMobile ?
                     <div className="box" id="partnersBox">
                         <h2 className="header-text-pages">Our Partners</h2>
-                        <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners1.png" className="partners-logo" alt="partnersPageImage1"></img>
-                        <p className="partners-paragraph">Damen Shipyard (Galati Romania, Gorinchem Holland, Shipyard Yichang China, Nakilat Qatar)</p>
-                        <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners2.png" className="partners-logo" alt="partnersPageImage2"></img>
-                        <p className="partners-paragraph">Vard Shipyard (Tulcea Romania, Braila Romania, Vung Tau , Vietnam, Aukra Norway)</p>
-                        <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners3.png" className="partners-logo" alt="partnersPageImage3"></img>
-                        <p className="partners-paragraph">Arabesque Galati, Romania</p>
-                        <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners4.png" className="partners-logo" alt="partnersPageImage4"></img>
-                        <p className="partners-paragraph">Lamprell Shipyard Sharjah, UAE</p>
-                        <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners5.png" className="partners-logo" alt="partnersPageImage5"></img>
-                        <p className="partners-paragraph">NASDIS Galati, Romania</p>
-                        <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners6.png" className="partners-logo" alt="partnersPageImage6"></img>
-                        <p className="partners-paragraph">Ship Design Group Galati, Romania</p>
-                        <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners7.png" className="partners-logo" alt="partnersPageImage7"></img>
-                        <p className="partners-paragraph">Icepronav Galati, Romania</p>
-                        <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners8.png" className="partners-logo" alt="partnersPageImage8"></img>
-                        <p className="partners-paragraph">ATG Shipyard Giurgiu, Romania</p>
-                        <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners9.png" className="partners-logo" alt="partnersPageImage9"></img>
-                        <p className="partners-paragraph">Ginton Naval Architect, Holland</p>
+                        <Fade timeout={500}>
+                            <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners1.png" className="partners-logo" alt="partnersPageImage1"></img>
+                            <p className="partners-paragraph">Damen Shipyard (Galati Romania, Gorinchem Holland, Shipyard Yichang China, Nakilat Qatar)</p>
+                        </Fade>
+                        <Fade timeout={750}>
+                            <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners2.png" className="partners-logo" alt="partnersPageImage2"></img>
+                            <p className="partners-paragraph">Vard Shipyard (Tulcea Romania, Braila Romania, Vung Tau , Vietnam, Aukra Norway)</p>
+                        </Fade>
+                        <Fade timeout={1000}>
+                            <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners3.png" className="partners-logo" alt="partnersPageImage3"></img>
+                            <p className="partners-paragraph">Arabesque Galati, Romania</p>
+                        </Fade>
+                        <Fade timeout={1250}>
+                            <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners4.png" className="partners-logo" alt="partnersPageImage4"></img>
+                            <p className="partners-paragraph">Lamprell Shipyard Sharjah, UAE</p>
+                        </Fade>
+                        <Fade timeout={1500}>
+                            <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners5.png" className="partners-logo" alt="partnersPageImage5"></img>
+                            <p className="partners-paragraph">NASDIS Galati, Romania</p>
+                        </Fade>
+                        <Fade timeout={1750}>
+                            <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners6.png" className="partners-logo" alt="partnersPageImage6"></img>
+                            <p className="partners-paragraph">Ship Design Group Galati, Romania</p>
+                        </Fade>
+                        <Fade timeout={2000}>
+                            <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners7.png" className="partners-logo" alt="partnersPageImage7"></img>
+                            <p className="partners-paragraph">Icepronav Galati, Romania</p>
+                        </Fade>
+                        <Fade timeout={2250}>
+                            <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners8.png" className="partners-logo" alt="partnersPageImage8"></img>
+                            <p className="partners-paragraph">ATG Shipyard Giurgiu, Romania</p>
+                        </Fade>
+                        <Fade timeout={2500}>
+                            <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners9.png" className="partners-logo" alt="partnersPageImage9"></img>
+                            <p className="partners-paragraph">Ginton Naval Architect, Holland</p>
+                        </Fade>
                     </div>
                     :
                     <div className="box">
                         <h2 className="header-text-pages" id="partnersHeader">Our Partners</h2>
                         <div className="row">
                             <div className="col-3">
-                                <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners1.png" className="partners-logo" alt="partnersPageImage1"></img>
-                                <p className="partners-paragraph">Damen Shipyard (Galati Romania, Gorinchem Holland, Shipyard Yichang China, Nakilat Qatar)</p>
+                                <Fade timeout={500}>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners1.png" className="partners-logo" alt="partnersPageImage1"></img>
+                                    <p className="partners-paragraph">Damen Shipyard (Galati Romania, Gorinchem Holland, Shipyard Yichang China, Nakilat Qatar)</p>
+                                </Fade>
                             </div>
                             <div className="col-3">
-                                <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners2.png" className="partners-logo" alt="partnersPageImage2"></img>
-                                <p className="partners-paragraph">Vard Shipyard (Tulcea Romania, Braila Romania, Vung Tau , Vietnam, Aukra Norway)</p>
+                                <Fade timeout={750}>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners2.png" className="partners-logo" alt="partnersPageImage2"></img>
+                                    <p className="partners-paragraph">Vard Shipyard (Tulcea Romania, Braila Romania, Vung Tau , Vietnam, Aukra Norway)</p>
+                                </Fade>
                             </div>
                             <div className="col-3">
-                                <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners3.png" className="partners-logo" alt="partnersPageImage3"></img>
-                                <p className="partners-paragraph">Arabesque Galati, Romania</p>
-                            </div>
-                        </div>
-                        <div className="row">
-                            <div className="col-3">
-                                <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners4.png" className="partners-logo" alt="partnersPageImage4"></img>
-                                <p className="partners-paragraph">Lamprell Shipyard Sharjah, UAE</p>
-                            </div>
-                            <div className="col-3">
-                                <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners5.png" className="partners-logo" alt="partnersPageImage5"></img>
-
-                                <p className="partners-paragraph">NASDIS Galati, Romania</p>
-                            </div>
-                            <div className="col-3">
-                                <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners6.png" className="partners-logo" alt="partnersPageImage6"></img>
-                                <p className="partners-paragraph">Ship Design Group Galati, Romania</p>
-
+                                <Fade timeout={1000}>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners3.png" className="partners-logo" alt="partnersPageImage3"></img>
+                                    <p className="partners-paragraph">Arabesque Galati, Romania</p>
+                                </Fade>
                             </div>
                         </div>
                         <div className="row">
                             <div className="col-3">
-                                <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners7.png" className="partners-logo" alt="partnersPageImage7"></img>
-                                <p className="partners-paragraph">Icepronav Galati, Romania</p>
+                                <Fade timeout={1250}>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners4.png" className="partners-logo" alt="partnersPageImage4"></img>
+                                    <p className="partners-paragraph">Lamprell Shipyard Sharjah, UAE</p>
+                                </Fade>
                             </div>
                             <div className="col-3">
-                                <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners8.png" className="partners-logo" alt="partnersPageImage8"></img>
-                                <p className="partners-paragraph">ATG Shipyard Giurgiu, Romania</p>
+                                <Fade timeout={1500}>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners5.png" className="partners-logo" alt="partnersPageImage5"></img>
+
+                                    <p className="partners-paragraph">NASDIS Galati, Romania</p>
+                                </Fade>
                             </div>
                             <div className="col-3">
-                                <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners9.png" className="partners-logo" alt="partnersPageImage9"></img>
-                                <p className="partners-paragraph">Ginton Naval Architect, Holland</p>
+                                <Fade timeout={1750}>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners6.png" className="partners-logo" alt="partnersPageImage6"></img>
+                                    <p className="partners-paragraph">Ship Design Group Galati, Romania</p>
+                                </Fade>
+
+                            </div>
+                        </div>
+                        <div className="row">
+                            <div className="col-3">
+                                <Fade timeout={2000}>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners7.png" className="partners-logo" alt="partnersPageImage7"></img>
+                                    <p className="partners-paragraph">Icepronav Galati, Romania</p>
+                                </Fade>
+                            </div>
+                            <div className="col-3">
+                                <Fade timeout={2250}>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners8.png" className="partners-logo" alt="partnersPageImage8"></img>
+                                    <p className="partners-paragraph">ATG Shipyard Giurgiu, Romania</p>
+                                </Fade>
+                            </div>
+                            <div className="col-3">
+                                <Fade timeout={2500}>
+                                    <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners9.png" className="partners-logo" alt="partnersPageImage9"></img>
+                                    <p className="partners-paragraph">Ginton Naval Architect, Holland</p>
+                                </Fade>
                             </div>
                         </div>
                     </div>
