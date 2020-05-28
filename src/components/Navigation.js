@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Component } from 'react'
 import {
     Collapse,
     Navbar,
@@ -13,78 +13,94 @@ import {
     DropdownItem,
     Fade,
 } from 'reactstrap';
+import { isMobile, isTablet, isDesktop } from 'react-device-detect'
 
-const Navigation = (props) => {
-    const [isOpen, setIsOpen] = useState(false);
-
-    const toggle = () => setIsOpen(!isOpen);
-
-    const navigateHome = () => {
-        props.handleHomeNavigation()
-        toggle()
-    }
-    const navigateServices = () => {
-        props.handleServicesNavigation()
-        toggle()
-    }
-    const navigateNavalProjects = () => {
-        props.handleNavalProjectsNavigation()
-        toggle()
-    }
-    const navigateSoftwareProjects = () => {
-        props.handleSoftwareProjectsNavigation()
-        toggle()
-    }
-    const navigatePartners = () => {
-        props.handlePartnersNavigation()
-        toggle()
-    }
-    const navigateLocation = () => {
-        props.handleLocationNavigation()
-        toggle()
+export default class Navigation extends React.Component {
+    constructor(props) {
+        super(props)
+        this.state = {
+            toggleNav: false
+        }
     }
 
-    return (
-        <Fade timeout={500}>
-            <div className="navbar-wrapper">
-                <Navbar color="light" light expand="md" className="navbar-custom">
-                    <NavbarBrand style={{ fontSize: "0.6rem" }}>Softcad Solutions</NavbarBrand>
-                    <NavbarToggler onClick={toggle} className="navbar-toggler-custom" />
-                    <Collapse isOpen={isOpen} navbar>
-                        <Nav className="mr-auto" navbar>
-                            <NavItem>
-                                <NavLink href="#" onClick={navigateHome}>Home</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="#" onClick={navigateServices}>Services</NavLink>
-                            </NavItem>
-                            <UncontrolledDropdown nav inNavbar>
-                                <DropdownToggle nav caret>
-                                    Projects
-              </DropdownToggle>
-                                <DropdownMenu right>
-                                    <DropdownItem href="#" onClick={navigateNavalProjects}>
-                                        Naval
-                </DropdownItem>
-                                    <DropdownItem href="#" onClick={navigateSoftwareProjects}>
-                                        Software
-                </DropdownItem>
-                                    <DropdownItem divider />
+    navigateHome = () => {
+        this.props.handleHomeNavigation()
+        const { toggleNav } = this.state
+        this.setState({ toggleNav: !toggleNav })
+    }
+    navigateServices = () => {
+        this.props.handleServicesNavigation()
+        const { toggleNav } = this.state
+        this.setState({ toggleNav: !toggleNav })
+    }
+    navigateNavalProjects = () => {
+        this.props.handleNavalProjectsNavigation()
+        const { toggleNav } = this.state
+        this.setState({ toggleNav: !toggleNav })
+    }
+    navigateSoftwareProjects = () => {
+        this.props.handleSoftwareProjectsNavigation()
+        const { toggleNav } = this.state
+        this.setState({ toggleNav: !toggleNav })
+    }
+    navigatePartners = () => {
+        this.props.handlePartnersNavigation()
+        const { toggleNav } = this.state
+        this.setState({ toggleNav: !toggleNav })
+    }
+    navigateLocation = () => {
+        this.props.handleLocationNavigation()
+        const { toggleNav } = this.state
+        this.setState({ toggleNav: !toggleNav })
+    }
 
-                                </DropdownMenu>
-                            </UncontrolledDropdown>
-                            <NavItem>
-                                <NavLink href="#" onClick={navigatePartners}>Partners</NavLink>
-                            </NavItem>
-                            <NavItem>
-                                <NavLink href="#" onClick={navigateLocation}>Location</NavLink>
-                            </NavItem>
-                        </Nav>
-                    </Collapse>
-                </Navbar>
-            </div>
-        </Fade>
-    );
+    handleToggle = () => {
+        const { toggleNav } = this.state
+        this.setState({ toggleNav: !toggleNav })
+    }
+
+
+
+    render() {
+        const { toggleNav } = this.state
+        const { navColor } = this.state
+        return (
+            <nav className="custom-navbar">
+                {
+                    !isMobile ?
+                        <ul className="custom-navbar-list">
+                            <li className="custom-navbar-list-item"><a href="#" className="link" onClick={this.navigateHome}>Home</a></li>
+                            <li className="custom-navbar-list-item"><a href="#" className="link" onClick={this.navigateServices}>Services</a></li>
+                            <li className="custom-navbar-list-item"><a href="#" className="link" onClick={this.navigateNavalProjects}>Naval Projects</a></li>
+                            <li className="custom-navbar-list-item"><a href="#" className="link" onClick={this.navigateSoftwareProjects}>Software Projects</a></li>
+                            <li className="custom-navbar-list-item"><a href="#" className="link" onClick={this.navigatePartners}>Partners</a></li>
+                            <li className="custom-navbar-list-item"><a href="#" className="link" onClick={this.navigateLocation}>Location</a></li>
+                        </ul>
+                        :
+                        <div className="custom-navbar-mobile-wrapper">
+                            <a onClick={this.handleToggle} className="custom-mobile-icon"><i className="fas fa-bars"></i></a>
+                            {toggleNav ?
+                                <Fade timeout={500}>
+                                    <div className="custom-navbar-mobile-menu">
+                                        <ul className="custom-navbar-list">
+                                            <li className="custom-navbar-list-item"><a href="#" className="link" onClick={this.navigateHome}>Home</a></li>
+                                            <li className="custom-navbar-list-item"><a href="#" className="link" onClick={this.navigateServices}>Services</a></li>
+                                            <li className="custom-navbar-list-item"><a href="#" className="link" onClick={this.navigateNavalProjects}>Naval Projects</a></li>
+                                            <li className="custom-navbar-list-item"><a href="#" className="link" onClick={this.navigateSoftwareProjects}>Software Projects</a></li>
+                                            <li className="custom-navbar-list-item"><a href="#" className="link" onClick={this.navigatePartners}>Partners</a></li>
+                                            <li className="custom-navbar-list-item"><a href="#" className="link" onClick={this.navigateLocation}>Location</a></li>
+                                        </ul>
+                                    </div>
+                                </Fade>
+
+                                :
+                                null
+                            }
+                        </div>
+
+                }
+            </nav>
+        );
+    }
 }
 
-export default Navigation;

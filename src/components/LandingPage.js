@@ -51,6 +51,14 @@ export class LandingPage extends Component {
             case 1:
                 return (
                     <Fade timeout={250}>
+                        <Navigation
+                            handleHomeNavigation={this.handleHomeNavigation}
+                            handleServicesNavigation={this.handleServicesNavigation}
+                            handleNavalProjectsNavigation={this.handleNavalProjectsNavigation}
+                            handleSoftwareProjectsNavigation={this.handleSoftwareProjectsNavigation}
+                            handlePartnersNavigation={this.handlePartnersNavigation}
+                            handleLocationNavigation={this.handleLocationNavigation}
+                        />
                         <header>
                             <div className="header-box">
                                 <Fade timeout={500}>

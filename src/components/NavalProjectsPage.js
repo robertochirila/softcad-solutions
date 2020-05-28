@@ -28,10 +28,10 @@ export class NavalProjectsPage extends Component {
                             <p className="services-paragraph">ESD screenshots and pictures during ship building stages</p>
                             <Carousel showThumbs={false} className="carousel">
                                 <div>
-                                    <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval1.png" alt="navalPageImage1"></img>
+                                    <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval2.png" alt="navalPageImage2"></img>
                                 </div>
                                 <div>
-                                    <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval2.png" alt="navalPageImage2"></img>
+                                    <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval1.png" alt="navalPageImage1"></img>
                                 </div>
                             </Carousel>
                         </Fade>
@@ -50,6 +50,9 @@ export class NavalProjectsPage extends Component {
                                 </div>
                                 <div>
                                     <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval4.png" alt="navalPageImage4"></img>
+                                </div>
+                                <div>
+                                    <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_naval6.png" alt="navalPageImage4"></img>
                                 </div>
                             </Carousel>
                         </Fade>

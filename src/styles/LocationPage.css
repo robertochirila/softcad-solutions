@@ -4,7 +4,12 @@
 
 @media screen and (min-width: 600px) {
     .services-paragraph {
-        font-size: 1rem;
+        font-size: 0.8rem;
+    }
+    .section-location {
+        background: rgb(0, 42, 108);
+        background: linear-gradient(0deg, rgba(0, 42, 108, 1) 16%, rgba(4, 148, 249, 1) 100%);
+        height: 100%;
     }
 }
 
@@ -12,13 +17,19 @@
 
 @media screen and (min-width: 900px) {
     .services-paragraph {
-        font-size: 1rem;
+        font-size: 1.4rem;
+        line-height: 3.0rem;
     }
 }
 
 /* DESKTOP */
 
-@media screen and (min-width: 1200px) {}
+@media screen and (min-width: 1200px) {
+    .services-paragraph {
+        font-size: 1rem;
+        line-height: 2.0rem;
+    }
+}
 
 .section-location {
     background-color: rgb(15, 38, 59);
@@ -28,13 +39,7 @@
     .section-location {
         background: rgb(0, 42, 108);
         background: linear-gradient(0deg, rgba(0, 42, 108, 1) 16%, rgba(4, 148, 249, 1) 100%);
-        height: auto;
-        /*background: rgb(2, 0, 36);
-        background: linear-gradient(126deg, rgba(2, 0, 36, 1) 0%, rgba(0, 0, 0, 1) 11%, rgba(34, 98, 185, 0.6362920168067228) 100%);
-        background-size: cover;
-        background-position: center;
-        background-attachment: fixed;
-        height: max-content;*/
+        height: 100%;
     }
     .location-image {
         width: 100%;
@@ -49,6 +54,7 @@
     .section-location {
         background: rgb(0, 42, 108);
         background: linear-gradient(0deg, rgba(0, 42, 108, 1) 16%, rgba(4, 148, 249, 1) 100%);
+        height: 130vh;
     }
 }
 

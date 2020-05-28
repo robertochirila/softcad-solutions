@@ -13,7 +13,7 @@
 @media screen and (min-width:1200) {}
 
 .button {
-    background: #000000;
+    background: transparent;
     color: #fff;
     text-transform: uppercase;
     padding: 12px 16px;
@@ -32,7 +32,7 @@
 
 .box {
     width: 90%;
-    padding: 5% 5%;
+    padding: 15% 5% 5% 5%;
     text-align: center;
 }
 
@@ -41,12 +41,27 @@
 }
 
 .services-paragraph {
-    font-size: 1rem;
-    line-height: 2rem;
+    font-size: 0.8rem;
+    line-height: 1.8rem;
 }
 
 .services-image {
     margin-top: 10%;
+}
+
+.col-2-custom {
+    width: 49.9%;
+    float: left;
+}
+
+.col-3-custom {
+    width: 33.3%;
+    float: left;
+}
+
+.row-custom {
+    width: 100%;
+    overflow: hidden;
 }
 
 #programmingIcon {
@@ -96,18 +111,17 @@
         height: auto;
     }
     .services-paragraph {
-        font-size: 0.9rem;
+        font-size: 0.7rem;
         line-height: 1.8rem;
     }
     .header-text-pages {
         font-size: 1rem;
     }
-    .navbar-custom {
-        height: 50%;
-        padding: 0.2rem 0.5rem !important;
+    .col-2-custom {
+        width: 100%;
     }
-    .navbar-toggler-custom {
-        font-size: 0.8rem;
+    .col-3-custom {
+        width: 100%;
     }
 }
 
@@ -125,15 +139,24 @@
         font-size: 0.6rem;
     }
     .services-paragraph {
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
 }
 
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 760px) {
     .button {
         font-size: 0.6rem;
     }
     .services-paragraph {
         font-size: 1rem;
+    }
+    .col-2-custom {
+        width: 100%;
+    }
+}
+
+@media screen and (min-height: 350px) and (orientation: landscape) {
+    .col-2-custom {
+        width: 100%;
     }
 }

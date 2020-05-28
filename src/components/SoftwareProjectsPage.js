@@ -50,6 +50,12 @@ export class SoftwareProjectsPage extends Component {
                                     <div>
                                         <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_software2.png" alt="landingPageImage2"></img>
                                     </div>
+                                    <div>
+                                        <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_software1.png" alt="landingPageImage1"></img>
+                                    </div>
+                                    <div>
+                                        <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_software2.png" alt="landingPageImage2"></img>
+                                    </div>
                                 </Carousel>
                             </Fade>
                             :
@@ -65,6 +71,12 @@ export class SoftwareProjectsPage extends Component {
                         </Fade>
                         <Fade timeout={750}>
                             <Carousel showThumbs={false}>
+                                <div>
+                                    <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_img16.jpg" alt="landingPageImage3"></img>
+                                </div>
+                                <div>
+                                    <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_img15.jpg" alt="landingPageImage3"></img>
+                                </div>
                                 <div>
                                     <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_software3.png" alt="landingPageImage3"></img>
                                 </div>
