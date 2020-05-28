@@ -4,11 +4,9 @@
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url('https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_headerShip2.jpg');
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
+    background-attachment: scroll;
     height: auto;
     width: 100%;
-    -webkit-backface-visibility: visible;
-    backface-visibility: visible;
 }
 
 .section-software-page {
