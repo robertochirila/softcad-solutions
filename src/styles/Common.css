@@ -102,13 +102,6 @@
     .header-text-pages {
         font-size: 1rem;
     }
-    .navbar-custom {
-        height: 50%;
-        padding: 0.2rem 0.5rem !important;
-    }
-    .navbar-toggler-custom {
-        font-size: 0.8rem;
-    }
 }
 
 @media only screen and (max-height: 700px) {

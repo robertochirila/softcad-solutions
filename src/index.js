@@ -10,6 +10,7 @@ import './styles/NavalProjects.css'
 import './styles/SoftwareProjects.css'
 import './styles/PartnersPage.css'
 import './styles/LocationPage.css'
+import './styles/Navigation.css'
 
 
 
