@@ -20,6 +20,12 @@ header {
     font-size: 0.8rem;
 }
 
+@media screen and (min-height: 650px) {}
+
+@media screen and (min-height: 950px) {}
+
+@media screen and (min-height: 1250px) {}
+
 @media screen and (min-width: 350px) {
     header {
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.9)), url("https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_headerShip.jpg");
@@ -31,7 +37,7 @@ header {
     }
     .header-box {
         position: absolute;
-        top: 60%;
+        top: 65%;
         left: 5%;
         text-transform: uppercase;
     }
@@ -51,12 +57,12 @@ header {
     }
     .header-box {
         position: absolute;
-        top: 60%;
+        top: 65%;
         left: 5%;
         text-transform: uppercase;
     }
     .header-text {
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
 }
 
@@ -103,5 +109,35 @@ header {
     }
     .header-text {
         font-size: 2rem;
+    }
+}
+
+@media screen and (min-height: 300px) and (max-width: 600px) and (orientation: landscape) {
+    .header-box {
+        top: 45%;
+    }
+    .header-text {
+        font-size: 0.8rem;
+    }
+    .button {
+        font-size: 0.6rem;
+    }
+    #showButton {
+        font-size: 0.6rem;
+    }
+}
+
+@media screen and (min-height: 350px) and (max-width: 850px) and (orientation: landscape) {
+    .header-box {
+        top: 45%;
+    }
+    .header-text {
+        font-size: 1rem;
+    }
+    .button {
+        font-size: 0.7rem;
+    }
+    #showButton {
+        font-size: 0.7rem;
     }
 }

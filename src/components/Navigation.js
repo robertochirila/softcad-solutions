@@ -25,21 +25,33 @@ export default class Navigation extends React.Component {
 
     navigateHome = () => {
         this.props.handleHomeNavigation()
+        const { toggleNav } = this.state
+        this.setState({ toggleNav: !toggleNav })
     }
     navigateServices = () => {
         this.props.handleServicesNavigation()
+        const { toggleNav } = this.state
+        this.setState({ toggleNav: !toggleNav })
     }
     navigateNavalProjects = () => {
         this.props.handleNavalProjectsNavigation()
+        const { toggleNav } = this.state
+        this.setState({ toggleNav: !toggleNav })
     }
     navigateSoftwareProjects = () => {
         this.props.handleSoftwareProjectsNavigation()
+        const { toggleNav } = this.state
+        this.setState({ toggleNav: !toggleNav })
     }
     navigatePartners = () => {
         this.props.handlePartnersNavigation()
+        const { toggleNav } = this.state
+        this.setState({ toggleNav: !toggleNav })
     }
     navigateLocation = () => {
         this.props.handleLocationNavigation()
+        const { toggleNav } = this.state
+        this.setState({ toggleNav: !toggleNav })
     }
 
     handleToggle = () => {

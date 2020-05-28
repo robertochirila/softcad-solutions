@@ -5,15 +5,22 @@
     background: linear-gradient(0deg, rgba(0, 42, 108, 1) 16%, rgba(4, 148, 249, 1) 100%);
 }
 
+#customPartnersBox {
+    padding: 8% 5% 5% 5%
+}
+
 .partners-paragraph {
     color: #ffffff;
     font-weight: lighter;
     margin: 5%;
+    font-size: 0.7rem;
 }
 
 .partners-logo {
     width: 100%;
     height: auto;
+    margin: 10% 0 0 5%;
+    padding: 0 5% 0 5%;
 }
 
 #partnersBox {
