@@ -54,7 +54,7 @@ export default class Navigation extends React.Component {
         return (
             <nav className="custom-navbar">
                 {
-                    !isMobile || !isTablet ?
+                    !isMobile ?
                         <ul className="custom-navbar-list">
                             <li className="custom-navbar-list-item"><a href="#" className="link" onClick={this.navigateHome}>Home</a></li>
                             <li className="custom-navbar-list-item"><a href="#" className="link" onClick={this.navigateServices}>Services</a></li>
