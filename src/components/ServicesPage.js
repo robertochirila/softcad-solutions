@@ -30,8 +30,6 @@ export class ServicesPage extends Component {
                             <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_navalProject3.png" className="services-image" alt="servicePageImage2"></img>
                         </Fade>
                     </div>
-                </div>
-                <div className="section-software-page">
                     <div className="box">
                         <Fade timeout={500}>
                             <p className="services-paragraph">Our main goal is to create new software applications for ship design, 3D modelling and CAD/CAM production information</p>

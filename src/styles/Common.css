@@ -1,17 +1,3 @@
-/* PHONES */
-
-/* SMALL TABLETS */
-
-/* LARGE TABLETS AND LAPTOPS */
-
-/*  */
-
-@media screen and (min-width:600) {}
-
-@media screen and (min-width:900) {}
-
-@media screen and (min-width:1200) {}
-
 .button {
     background: transparent;
     color: #fff;
@@ -31,9 +17,10 @@
 }
 
 .box {
-    width: 90%;
+    width: 49.9%;
     padding: 15% 5% 5% 5%;
     text-align: center;
+    float: left;
 }
 
 .header-text-pages {
@@ -93,9 +80,18 @@
         border-color: #fff;
     }
     .box {
-        padding: 20% 3% 10% 3%;
+        padding: 30% 3% 10% 3%;
         width: 94%;
         text-align: center;
+    }
+    #navalBox {
+        padding-top: 5%;
+    }
+    #softwareBox {
+        padding-top: 5%;
+    }
+    #boxLocation {
+        padding-top: 5%;
     }
     #navalProjectButton {
         margin: 5% 0;

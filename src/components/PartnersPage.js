@@ -8,7 +8,7 @@ export class PartnersPage extends Component {
             <section className="section-partners">
                 {isMobile ?
                     <div className="box" id="partnersBox">
-                        <h2 className="header-text-pages">Our Partners</h2>
+                        <h2 id="partnersHeader">Our Partners</h2>
                         <Fade timeout={500}>
                             <img src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_partners1.png" className="partners-logo" alt="partnersPageImage1"></img>
                             <p className="partners-paragraph">Damen Shipyard (Galati Romania, Gorinchem Holland, Shipyard Yichang China, Nakilat Qatar)</p>

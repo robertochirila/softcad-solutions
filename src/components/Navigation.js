@@ -1,19 +1,6 @@
 import React, { Component } from 'react'
-import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
-    Nav,
-    NavItem,
-    NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    Fade,
-} from 'reactstrap';
-import { isMobile, isTablet, isDesktop } from 'react-device-detect'
+import { Fade } from 'reactstrap';
+import { isMobile } from 'react-device-detect'
 
 export default class Navigation extends React.Component {
     constructor(props) {

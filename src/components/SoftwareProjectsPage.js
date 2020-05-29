@@ -23,44 +23,19 @@ export class SoftwareProjectsPage extends Component {
                             <p className="services-paragraph">Autonesting : plates and profiles parts automatic nesting system</p>
                             <p className="services-paragraph">ShellPlates : ship 3D surfaces modeller, seams and butts arrangement, surface expansion 2D parts</p>
                         </Fade>
-                        {!isMobile ?
-                            <Fade timeout={750}>
-                                <Carousel showThumbs={false}>
-                                    <div>
-                                        <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_software1.png" alt="landingPageImage1"></img>
-                                    </div>
-                                    <div>
-                                        <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_software2.png" alt="landingPageImage2"></img>
-                                    </div>
-                                </Carousel>
-                            </Fade>
-                            :
-                            null
-                        }
+
+                        <Fade timeout={750}>
+                            <Carousel showThumbs={false}>
+                                <div>
+                                    <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_software1.png" alt="landingPageImage1"></img>
+                                </div>
+                                <div>
+                                    <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_software2.png" alt="landingPageImage2"></img>
+                                </div>
+                            </Carousel>
+                        </Fade>
                     </div>
-                </div>
-                <div className="section-software-more">
-                    <div className="box">
-                        {isMobile || isTablet ?
-                            <Fade>
-                                <Carousel showThumbs={false}>
-                                    <div>
-                                        <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_software1.png" alt="landingPageImage1"></img>
-                                    </div>
-                                    <div>
-                                        <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_software2.png" alt="landingPageImage2"></img>
-                                    </div>
-                                    <div>
-                                        <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_software1.png" alt="landingPageImage1"></img>
-                                    </div>
-                                    <div>
-                                        <img className="carousel-image" src="https://bucket-softcad.s3.eu-west-2.amazonaws.com/softcad/scs_software2.png" alt="landingPageImage2"></img>
-                                    </div>
-                                </Carousel>
-                            </Fade>
-                            :
-                            null
-                        }
+                    <div className="box" id="softwareBox">
                         <Fade timeout={500}>
 
                             <h2 className="header-text-pages">Custom software applications, a few examples</h2>

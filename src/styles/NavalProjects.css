@@ -77,8 +77,9 @@
         height: 100vh;
     }
     .section-naval {
-        width: 49.9%;
-        float: left;
+        /*width: 49.9%;
+        float: left;*/
+        overflow-y: hidden;
     }
     .section-naval-more {
         width: 49.9%;

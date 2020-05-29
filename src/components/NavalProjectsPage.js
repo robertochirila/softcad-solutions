@@ -36,9 +36,7 @@ export class NavalProjectsPage extends Component {
                             </Carousel>
                         </Fade>
                     </div>
-                </div>
-                <div className="section-naval-more">
-                    <div className="box">
+                    <div className="box" id="navalBox">
                         <Fade timeout={500}>
                             <h2 className="header-text-pages" id="headerNaval">Ships and more...</h2>
                             <p className="services-paragraph" id="servicesParagraph">3D ship models but also any kind of steel structure</p>

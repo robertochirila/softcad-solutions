@@ -6,11 +6,17 @@
 }
 
 #customPartnersBox {
-    padding: 8% 5% 5% 5%
+    padding: 8% 5% 5% 5%;
+    width: 100%;
+}
+
+.header-text-pages {
+    color: #ffffff;
+    text-align: center;
 }
 
 .partners-paragraph {
-    color: #ffffff;
+    color: #000000;
     font-weight: lighter;
     margin: 5%;
     font-size: 0.7rem;
@@ -25,6 +31,11 @@
 
 #partnersBox {
     text-align: center;
+}
+
+#partnersHeader {
+    color: #000000;
+    font-size: 1rem;
 }
 
 .row {
@@ -60,11 +71,11 @@
         display: block;
     }
     #partnersHeader {
-        color: #ffffff;
+        color: #000000;
         text-align: left;
     }
     .partners-paragraph {
-        color: #ffffff;
+        color: #000000;
     }
 }
 
