@@ -107,8 +107,9 @@
         height: auto;
     }
     .services-paragraph {
-        font-size: 0.7rem;
+        font-size: 0.8rem;
         line-height: 1.8rem;
+        word-spacing: 0.2rem;
     }
     .header-text-pages {
         font-size: 1rem;

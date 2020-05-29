@@ -1,80 +1,9 @@
 body, html {
   background-color: #f4f1ee;
   color: #ffffff;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
   font-size: 30px;
   min-height: 100vh;
   overflow-x: hidden;
   box-sizing: border-box;
 }
-
-/* FOOTER NAV */
-
-/*.footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 8%;
-  background-color: transparent;
-  color: white;
-  text-align: center;
-}
-
-.nav {
-  position: fixed;
-  display: inline-block;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 8%;
-  background-color: #000000;
-  color: white;
-  text-align: center;
-}
-
-/* LANDING PAGE */
-
-/*.overlay {
-  position: relative;
-}
-
-.overlay:after {
-  content: '\A';
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  background: rgba(0, 0, 0, 0.7);
-}*/
-
-/* Buttons */
-
-/*.button {
-  background: transparent;
-  text-transform: uppercase;
-  padding: 10px 12px;
-  color: #ffffff;
-  transition: 0.3s color, 0.3s background ease-in;
-}
-
-.button:hover {
-  background: #ffffff;
-  color: #000000;
-  border-color: #ffffff;
-}
-
-.button:focus {
-  outline: 0
-}
-
-#buttonPrev {
-  border: none;
-}
-
-#buttonNext {
-  border: none;
-  margin-left: 5%;
-  margin-bottom: 5%;
-}*/
