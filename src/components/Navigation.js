@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Fade } from 'reactstrap';
-import { isMobile } from 'react-device-detect'
+import { isMobile, isTablet } from 'react-device-detect'
 
 export default class Navigation extends React.Component {
     constructor(props) {
@@ -54,7 +54,7 @@ export default class Navigation extends React.Component {
         return (
             <nav className="custom-navbar">
                 {
-                    !isMobile ?
+                    !isMobile || !isTablet ?
                         <ul className="custom-navbar-list">
                             <li className="custom-navbar-list-item"><a href="#" className="link" onClick={this.navigateHome}>Home</a></li>
                             <li className="custom-navbar-list-item"><a href="#" className="link" onClick={this.navigateServices}>Services</a></li>
